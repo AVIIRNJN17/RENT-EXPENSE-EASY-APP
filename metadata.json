@@ -1,0 +1,6 @@
+{
+  "name": "AVHII DATABASE APP 1.0",
+  "description": "रेंट, राशन, बिजली और दैनिक ख़र्चों का डेटाबेस - Rent, electricity bill calculator, daily expenses, and ration checklist tracker with digital receipts and WhatsApp sharing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Outfit', 'Inter', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* 3D Animated Floating Cat & Gift Effects */
+@keyframes float3DCat {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translate3d(14px, -18px, 15px) rotate(3.5deg) scale(1.04);
+  }
+  50% {
+    transform: translate3d(-8px, -26px, 25px) rotate(-2.5deg) scale(1.06);
+  }
+  75% {
+    transform: translate3d(-16px, -10px, 10px) rotate(-4deg) scale(1.02);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
+  }
+}
+
+@keyframes catShadowPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.35;
+  }
+  50% {
+    transform: scale(0.68);
+    opacity: 0.16;
+  }
+}
+
+@keyframes giftBoxPulse {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+    filter: drop-shadow(0 4px 10px rgba(245, 158, 11, 0.5));
+  }
+  50% {
+    transform: scale(1.08) rotate(-4deg);
+    filter: drop-shadow(0 6px 16px rgba(244, 63, 94, 0.7));
+  }
+}
+
+.animate-3d-cat {
+  animation: float3DCat 6s ease-in-out infinite;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.animate-cat-shadow {
+  animation: catShadowPulse 6s ease-in-out infinite;
+}
+
+.animate-gift-glow {
+  animation: giftBoxPulse 2.8s ease-in-out infinite;
+}

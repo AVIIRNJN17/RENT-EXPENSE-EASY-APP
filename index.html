@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="hi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AVHII DATABASE APP 1.0 - रेंट, राशन और दैनिक खर्च</title>
+    <meta name="description" content="रेंट, राशन, बिजली और दैनिक ख़र्चों का डेटाबेस - Rent, electricity bill calculator, daily expenses, and ration checklist tracker." />
+    <meta property="og:title" content="AVHII DATABASE APP 1.0" />
+    <meta property="og:description" content="रेंट, राशन, बिजली और दैनिक ख़र्चों का डेटाबेस" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Google Fonts: Outfit + Inter + Noto Sans Devanagari -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for iconic symbols -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <style>
+      @media print {
+        body * {
+          visibility: hidden !important;
+        }
+        #printableReceiptArea, #printableReceiptArea *,
+        #printableBillsHubReport, #printableBillsHubReport * {
+          visibility: visible !important;
+        }
+        #printableReceiptArea, #printableBillsHubReport {
+          position: absolute !important;
+          left: 0 !important;
+          top: 0 !important;
+          width: 100% !important;
+          margin: 0 !important;
+          padding: 24px !important;
+          box-shadow: none !important;
+          border: none !important;
+          background: white !important;
+          color: black !important;
+        }
+        .no-print {
+          display: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-slate-100 text-slate-800 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

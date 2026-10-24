@@ -1,0 +1,2628 @@
+<!DOCTYPE html>
+<html lang="hi"><head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIxNTczNjMxNjM2NTYwODc3MDUwNyIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjXzFmZWJmNTcwZTM0ZTc0NzlfaW5kZXguaHRtbC05NDQifSwiZXhwIjoxNzkyODc5MTQ3LCJpYXQiOjE3OTI4NzU1NDcsImFsZyI6IlJTMjU2In0.BKoH6swQgv3hAnDHRVbpJEv0Ts4MW4ljzJuS37nacf_WJLAMIRI5ktdWzvxaBfAkIwSeTXMR5okYkOI2lWhXCoM_Hu7teiXCN3779v2D4flQFEz8SejKs2Y_0WNROFHkT2MRHd-94CcyYf4_w-q-w1pq_YcyGM3cUbAaXGzoRGkPuN2YNVXZENgWg6aTFDOLts8uqbjTNVYtAtFNDmrPjE_KQWGqy33EDFHWODOQeX78PNgEYXfnhs36ZyYXxXJczv6F0DWxRBVAnc6vvp4dTvyGCvGRjf__WPtYamLeNgtYcwCGUxdsTruSBDNFqsKh0WRxYlrVvXQdeDtaVUXX2g","c_1febf570e34e7479_index.html-944")</script><script data-bard-client-injected="true">
+  document.addEventListener('input', (event) => {
+    if (event.target && (event.target.isContentEditable || event.target.hasAttribute('contenteditable'))) {
+      const clonedDoc = document.cloneNode(true);
+      const injectedScripts = clonedDoc.querySelectorAll('[data-bard-client-injected="true"]');
+      injectedScripts.forEach(el => el.remove());
+      window.parent.postMessage({
+        type: 'inlineEdit',
+        html: '<!DOCTYPE html>\n' + clonedDoc.documentElement.outerHTML
+      }, '*');
+    }
+  });
+</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-client-injected="true">(function(){'use strict';var h=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,c){if(a==Array.prototype||a==Object.prototype)return a;a[b]=c.value;return a};function l(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var c=a[b];if(c&&c.Math==Math)return c}throw Error("Cannot find global object");}var n=l(this);
+function p(a,b){if(b)a:{var c=n;a=a.split(".");for(var d=0;d<a.length-1;d++){var e=a[d];if(!(e in c))break a;c=c[e]}a=a[a.length-1];d=c[a];b=b(d);b!=d&&b!=null&&h(c,a,{configurable:!0,writable:!0,value:b})}}function r(a){function b(d){return a.next(d)}function c(d){return a.throw(d)}return new Promise(function(d,e){function f(g){g.done?d(g.value):Promise.resolve(g.value).then(b,c).then(f,e)}f(a.next())})}function t(a){return r(a())}
+p("Object.values",function(a){return a?a:function(b){var c=[],d;for(d in b)Object.prototype.hasOwnProperty.call(b,d)&&c.push(b[d]);return c}});p("Array.prototype.includes",function(a){return a?a:function(b,c){var d=this;d instanceof String&&(d=String(d));var e=d.length;c=c||0;for(c<0&&(c=Math.max(c+e,0));c<e;c++){var f=d[c];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function u(a,b){var c=a.style;b.backgroundColor&&(c.backgroundColor=b.backgroundColor);b.width&&(c.width=`${b.width}px`);b.height&&(c.height=`${b.height}px`);var d=b.style;d!=null&&Object.keys(d).forEach(e=>{c[e]=d[e]})};var v=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let c=0,d=a.length;c<d;c++)b.push(a[c]);return b}let x=null;function y(a={}){return x?x:a.u?x=a.u:x=w(window.getComputedStyle(document.documentElement))}function z(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function A(a,b={}){var c;if(!(c=b.width)){c=z(a,"border-left-width");var d=z(a,"border-right-width");c=a.clientWidth+c+d}(b=b.height)||(b=z(a,"border-top-width"),d=z(a,"border-bottom-width"),b=a.clientHeight+b+d);return{width:c,height:b}}function B(a){return new Promise((b,c)=>{var d=new Image;d.onload=()=>{d.decode().then(()=>{requestAnimationFrame(()=>b(d))})};d.onerror=c;d.crossOrigin="anonymous";d.decoding="async";d.src=a})}
+function C(a){return t(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function D(a,b,c){return t(function*(){var d=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");d.setAttribute("width",`${b}`);d.setAttribute("height",`${c}`);d.setAttribute("viewBox",`0 0 ${b} ${c}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");d.appendChild(e);e.appendChild(a);return C(d)})}
+var E=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||E(a,b)};function F(a,b){return y(b).map(c=>{var d=a.getPropertyValue(c),e=a.getPropertyPriority(c);return`${c}: ${d}${e?" !important":""};`}).join(" ")}
+function G(a,b,c,d){a=window.getComputedStyle(a,c);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=v();try{b.className=`${b.className} ${f}`}catch(k){return}e=document.createElement("style");var g=e.appendChild;c=`.${f}:${c}`;a.cssText?(d=a.getPropertyValue("content"),d=`${a.cssText} content: '${d.replace(/'|"/g,"")}';`):d=F(a,d);g.call(e,document.createTextNode(`${c}{${d}}`));b.appendChild(e)}};function H(a){return a.search(/^(data:)/)!==-1}function I(a,b,c){return t(function*(){var d=yield fetch(a,b);if(d.status===404)throw Error(`Resource "${d.url}" not found`);var e=yield d.blob();return new Promise((f,g)=>{var k=new FileReader;k.onerror=g;k.onloadend=()=>{try{f(c({v:d,result:k.result}))}catch(m){g(m)}};k.readAsDataURL(e)})})}const J={};function aa(a,b,c){var d=a.replace(/\?.*/,"");c&&(d=a);/ttf|otf|eot|woff2?/i.test(d)&&(d=d.replace(/.*\//,""));return b?`[${b}]${d}`:d}
+function K(a,b,c){return t(function*(){var d=aa(a,b,c.F);if(J[d]!=null)return J[d];c.B&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield I(a,c.l,({v:g,result:k})=>{b||(b=g.headers.get("Content-Type")||"");return k.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=c.o||""}return J[d]=e})};const L={R:"application/font-woff",S:"application/font-woff",O:"application/font-truetype",C:"application/vnd.ms-fontobject",J:"image/png",H:"image/jpeg",G:"image/jpeg",D:"image/gif",N:"image/tiff",M:"image/svg+xml",P:"image/webp"};function M(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function ba(a){return t(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):B(b)})}function ca(a,b){return t(function*(){if(a.currentSrc){var c=document.createElement("canvas");let d=c.getContext("2d");c.width=a.clientWidth;c.height=a.clientHeight;d==null||d.drawImage(a,0,0,c.width,c.height);c=c.toDataURL();return B(c)}c=a.poster;c=yield K(c,L[M(c).toLowerCase()]||"",b);return B(c)})}
+function da(a,b){return t(function*(){try{let c;if(a==null?0:(c=a.contentDocument)==null?0:c.body)return yield N(a.contentDocument.body,b,!0)}catch(c){}return a.cloneNode(!1)})}function ea(a,b){return t(function*(){return E(a,HTMLCanvasElement)?ba(a):E(a,HTMLVideoElement)?ca(a,b):E(a,HTMLIFrameElement)?da(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function fa(a,b,c){return t(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var d=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)d=w(a.assignedNodes());else{let e;if(E(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))d=w(a.contentDocument.body.childNodes);else{let f;d=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(d.length===0||E(a,HTMLVideoElement))return b;yield d.reduce((e,f)=>e.then(()=>N(f,c)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function ha(a,b,c){var d=b.style;if(d){var e=window.getComputedStyle(a);e.cssText?(d.cssText=e.cssText,d.transformOrigin=e.transformOrigin):y(c).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);E(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);d.setProperty(f,g,e.getPropertyPriority(f))})}}
+function ia(a,b){E(a,HTMLSelectElement)&&(b=Array.from(b.children).find(c=>a.value===c.getAttribute("value")))&&b.setAttribute("selected","")}
+function ja(a,b){return t(function*(){var c=a.querySelectorAll?a.querySelectorAll("use"):[];if(c.length===0)return a;var d={};for(var e=0;e<c.length;e++){var f=c[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||d[f]||(d[f]=yield N(g,b,!0))}}c=Object.values(d);if(c.length){d=document.createElementNS("http://www.w3.org/1999/xhtml","svg");d.setAttribute("xmlns","http://www.w3.org/1999/xhtml");d.style.position="absolute";d.style.width="0";d.style.height="0";
+d.style.overflow="hidden";d.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");d.appendChild(e);for(f=0;f<c.length;f++)e.appendChild(c[f]);a.appendChild(d)}return a})}
+function N(a,b,c){return t(function*(){return c||!b.filter||b.filter(a)?Promise.resolve(a).then(d=>ea(d,b)).then(d=>fa(a,d,b)).then(d=>{E(d,Element)&&(ha(a,d,b),G(a,d,":before",b),G(a,d,":after",b),E(a,HTMLTextAreaElement)&&(d.textContent=a.value),E(a,HTMLInputElement)&&d.setAttribute("value",a.value),ia(a,d));return d}).then(d=>ja(d,b)):null})};const O=/url\((['"]?)([^'"]+?)\1\)/g,ka=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,la=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function ma(a){var b=[];a.replace(O,(c,d,e)=>{b.push(e);return c});return b.filter(c=>!H(c))}
+function na(a,b,c,d){return t(function*(){try{let e=c?(new URL(b,c||void 0)).toString():b,f;f=yield K(e,L[M(b).toLowerCase()]||"",d);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function oa(a,{K:b}){return b?a.replace(la,c=>{for(;;){let [d,,e]=ka.exec(c)||[];if(!e)return"";if(e===b)return`src: ${d};`}}):a}
+function P(a,b,c){return t(function*(){if(a.search(O)===-1)return a;var d=oa(a,c);return ma(d).reduce((e,f)=>e.then(g=>na(g,f,b,c)),Promise.resolve(d))})};function Q(a,b,c){return t(function*(){var d,e=(d=b.style)==null?void 0:d.getPropertyValue(a);return e?(d=yield P(e,null,c),b.style.setProperty(a,d,b.style.getPropertyPriority(a)),!0):!1})}function pa(a,b){return t(function*(){(yield Q("background",a,b))||(yield Q("background-image",a,b));(yield Q("mask",a,b))||(yield Q("-webkit-mask",a,b))||(yield Q("mask-image",a,b))||(yield Q("-webkit-mask-image",a,b))})}
+function qa(a,b){return t(function*(){var c=E(a,HTMLImageElement);if(c&&!H(a.src)||E(a,SVGImageElement)&&!H(a.href.baseVal)){var d=c?a.src:a.href.baseVal,e=yield K(d,L[M(d).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.h?(...k)=>{try{f(b.h(...k))}catch(m){g(m)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");c?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function ra(a,b){return t(function*(){var c=w(a.childNodes).map(d=>R(d,b));yield Promise.all(c).then(()=>a)})}function R(a,b){return t(function*(){E(a,Element)&&(yield pa(a,b),yield qa(a,b),yield ra(a,b))})};const S={};function T(a){return t(function*(){var b=S[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return S[a]=b})}function U(a,b){return t(function*(){var c=a.cssText,d=/url\(["']?([^"')]+)["']?\)/g,e=(c.match(/url\([^)]+\)/g)||[]).map(f=>t(function*(){var g=f.replace(d,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return I(g,b.l,({result:k})=>{c=c.replace(f,`url(${k})`);return[f,k]})}));return Promise.all(e).then(()=>c)})}
+function V(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var c=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var d=c.exec(a);if(d===null)break;b.push(d[0])}a=a.replace(c,"");c=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(d=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=c.exec(a);if(e===null)if(e=d.exec(a),e===null)break;else c.lastIndex=d.lastIndex;else d.lastIndex=
+c.lastIndex;b.push(e[0])}return b}
+function sa(a,b){return t(function*(){var c=[],d=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let k=g+1;f=T(f.href).then(m=>U(m,b)).then(m=>V(m).forEach(q=>{try{e.insertRule(q,q.startsWith("@import")?k+=1:e.cssRules.length)}catch(Fa){}})).catch(()=>{});d.push(f)}})}catch(f){let g=a.find(k=>k.href==null)||document.styleSheets[0];e.href!=null&&d.push(T(e.href).then(k=>U(k,b)).then(k=>V(k).forEach(m=>{g.insertRule(m,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(d).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{c.push(f)})}catch(f){}});return c})})}function ta(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(O)!==-1)}function ua(a,b){return t(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var c=yield sa(w(a.ownerDocument.styleSheets),b);return ta(c)})}
+function va(a){function b(d){(d.style.fontFamily||getComputedStyle(d).fontFamily).split(",").forEach(e=>{c.add(e.trim().replace(/["']/g,""))});Array.from(d.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var c=new Set;b(a);return c}function wa(a,b){return t(function*(){var c=yield ua(a,b),d=va(a);return(yield Promise.all(c.filter(e=>d.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>P(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function xa(a,b){return t(function*(){var c=b.m!=null?b.m:b.A?null:yield wa(a,b);if(c){let d=document.createElement("style");d.appendChild(document.createTextNode(c));a.firstChild?a.insertBefore(d,a.firstChild):a.appendChild(d)}})};function ya(a,b={}){return t(function*(){var {width:c,height:d}=A(a,b),e=yield N(a,b,!0);yield xa(e,b);yield R(e,b);u(e,b);return yield D(e,c,d)})}
+function za(a,b={}){return t(function*(){var {width:c,height:d}=A(a,b),e=yield ya(a,b);e=yield B(e);var f=document.createElement("canvas"),g=f.getContext("2d"),k=b.I||window.devicePixelRatio||1,m=b.j||c,q=b.i||d;f.width=m*k;f.height=q*k;!b.L&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${m}`;f.style.height=`${q}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function Aa(a,b={}){return t(function*(){return(yield za(a,b)).toDataURL()})};const Ba=["gemini.google.com","corp.google.com","proxy.googlers.com"];function W(){return document.body.querySelectorAll('[class*="animate"]').length>0}function X(a,b){var c=document.createElement("canvas");c.width=a;c.height=b;return c.toDataURL("image/png")}const Y=X(1,1);
+function Z(a){return t(function*(){try{return yield Aa(a,{j:a.offsetWidth,i:a.offsetHeight,A:!0,filter:b=>{if(b.tagName==="IMG"){let c=b.getAttribute("src");if(!c||c.trim()===""||b.style.display==="none")return!1}return!0},o:Y,h:()=>Y})}catch(b){return X(a.offsetWidth,a.offsetHeight)}})}
+function Ca(){return t(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,c=document.body.cloneNode(!0);c.querySelectorAll('[class*="animate"]').forEach(d=>{d.classList.remove(...Array.from(d.classList).filter(e=>e.startsWith("animate")))});c.style.width=`${a}px`;c.style.height=`${b}px`;return c})}
+function Da(a){return t(function*(){var b=document.body;if(W()){var c=yield Ca();b=c;document.body.appendChild(c)}c=yield Z(b);W()&&document.body.removeChild(b);window.parent.postMessage({type:"SEND_SCREENSHOT",image:c,topOffset:document.documentElement.scrollTop},a.origin)})}function Ea(a){return t(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}
+window.addEventListener("message",a=>t(function*(){if(Ba.some(c=>a.origin.includes(c))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Da(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ea(a)))}}));
+})();</script><script data-bard-client-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-client-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.j=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.i="";var l=0,t=null,r=null,q=[],F=new TextEncoder,G=new TextDecoder;
+c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*16|0;return(f===
+"x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;(g=t)==null||g.postMessage(a)}};
+Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-client-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AVHII DATABASE APP 1.0 - रेंट, राशन और दैनिक खर्च</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts: Outfit + Inter + Noto Sans Devanagari -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&amp;family=Inter:wght@300;400;500;600;700&amp;family=Noto+Sans+Devanagari:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Outfit', 'Inter', 'Noto Sans Devanagari', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+    
+    /* Print Specific Styling for Receipt */
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      #printableReceiptArea, #printableReceiptArea * {
+        visibility: visible;
+      }
+      #printableReceiptArea {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        box-shadow: none !important;
+        border: none !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Outfit, Inter, Noto Sans Devanagari, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.-bottom-1{bottom:-0.25rem}.-right-1{right:-0.25rem}.bottom-0{bottom:0px}.left-0{left:0px}.left-3{left:0.75rem}.right-0{right:0px}.right-3{right:0.75rem}.top-0{top:0px}.top-2{top:0.5rem}.right-5{right:1.25rem}.top-5{top:1.25rem}.z-10{z-index:10}.z-40{z-index:40}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.my-auto{margin-top:auto;margin-bottom:auto}.mb-1{margin-bottom:0.25rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.mt-2\.5{margin-top:0.625rem}.mb-5{margin-bottom:1.25rem}.ml-auto{margin-left:auto}.mt-6{margin-top:1.5rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-12{height:3rem}.h-4{height:1rem}.h-6{height:1.5rem}.h-8{height:2rem}.h-9{height:2.25rem}.h-full{height:100%}.max-h-72{max-height:18rem}.max-h-\[75vh\]{max-height:75vh}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-12{width:3rem}.w-2\.5{width:0.625rem}.w-4{width:1rem}.w-8{width:2rem}.w-9{width:2.25rem}.w-full{width:100%}.w-36{width:9rem}.max-w-6xl{max-width:72rem}.max-w-lg{max-width:32rem}.max-w-md{max-width:28rem}.max-w-xl{max-width:36rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.translate-y-\[-100px\]{--tw-translate-y:-100px;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;user-select:none}.list-inside{list-style-position:inside}.list-decimal{list-style-type:decimal}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.justify-around{justify-content:space-around}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-3\.5{gap:0.875rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.space-x-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.375rem * var(--tw-space-x-reverse));margin-left:calc(0.375rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-2 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.divide-y > :not([hidden]) ~ :not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px * calc(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px * var(--tw-divide-y-reverse))}.divide-slate-100 > :not([hidden]) ~ :not([hidden]){--tw-divide-opacity:1;border-color:rgb(241 245 249 / var(--tw-divide-opacity, 1))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-\[14px\]{border-radius:14px}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.rounded{border-radius:0.25rem}.rounded-md{border-radius:0.375rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-t{border-top-width:1px}.border-t-2{border-top-width:2px}.border-dashed{border-style:dashed}.border-amber-200\/80{border-color:rgb(253 230 138 / 0.8)}.border-emerald-200{--tw-border-opacity:1;border-color:rgb(167 243 208 / var(--tw-border-opacity, 1))}.border-emerald-300\/30{border-color:rgb(110 231 183 / 0.3)}.border-emerald-400\/30{border-color:rgb(52 211 153 / 0.3)}.border-emerald-400\/40{border-color:rgb(52 211 153 / 0.4)}.border-emerald-500\/40{border-color:rgb(16 185 129 / 0.4)}.border-indigo-400{--tw-border-opacity:1;border-color:rgb(129 140 248 / var(--tw-border-opacity, 1))}.border-rose-200{--tw-border-opacity:1;border-color:rgb(254 205 211 / var(--tw-border-opacity, 1))}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slate-200\/90{border-color:rgb(226 232 240 / 0.9)}.border-slate-300{--tw-border-opacity:1;border-color:rgb(203 213 225 / var(--tw-border-opacity, 1))}.border-slate-900{--tw-border-opacity:1;border-color:rgb(15 23 42 / var(--tw-border-opacity, 1))}.border-transparent{border-color:transparent}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.border-indigo-100{--tw-border-opacity:1;border-color:rgb(224 231 255 / var(--tw-border-opacity, 1))}.border-slate-400{--tw-border-opacity:1;border-color:rgb(148 163 184 / var(--tw-border-opacity, 1))}.bg-amber-400{--tw-bg-opacity:1;background-color:rgb(251 191 36 / var(--tw-bg-opacity, 1))}.bg-amber-50{--tw-bg-opacity:1;background-color:rgb(255 251 235 / var(--tw-bg-opacity, 1))}.bg-amber-500{--tw-bg-opacity:1;background-color:rgb(245 158 11 / var(--tw-bg-opacity, 1))}.bg-black\/60{background-color:rgb(0 0 0 / 0.6)}.bg-emerald-50{--tw-bg-opacity:1;background-color:rgb(236 253 245 / var(--tw-bg-opacity, 1))}.bg-emerald-50\/60{background-color:rgb(236 253 245 / 0.6)}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-emerald-500\/20{background-color:rgb(16 185 129 / 0.2)}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.bg-emerald-600\/30{background-color:rgb(5 150 105 / 0.3)}.bg-indigo-50{--tw-bg-opacity:1;background-color:rgb(238 242 255 / var(--tw-bg-opacity, 1))}.bg-indigo-600{--tw-bg-opacity:1;background-color:rgb(79 70 229 / var(--tw-bg-opacity, 1))}.bg-rose-50{--tw-bg-opacity:1;background-color:rgb(255 241 242 / var(--tw-bg-opacity, 1))}.bg-rose-500{--tw-bg-opacity:1;background-color:rgb(244 63 94 / var(--tw-bg-opacity, 1))}.bg-rose-600{--tw-bg-opacity:1;background-color:rgb(225 29 72 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-200{--tw-bg-opacity:1;background-color:rgb(226 232 240 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-slate-950{--tw-bg-opacity:1;background-color:rgb(2 6 23 / var(--tw-bg-opacity, 1))}.bg-slate-950\/40{background-color:rgb(2 6 23 / 0.4)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-white\/20{background-color:rgb(255 255 255 / 0.2)}.bg-white\/95{background-color:rgb(255 255 255 / 0.95)}.bg-black\/70{background-color:rgb(0 0 0 / 0.7)}.bg-indigo-50\/50{background-color:rgb(238 242 255 / 0.5)}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-amber-100{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.bg-emerald-100{--tw-bg-opacity:1;background-color:rgb(209 250 229 / var(--tw-bg-opacity, 1))}.bg-indigo-50\/80{background-color:rgb(238 242 255 / 0.8)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-amber-300{--tw-gradient-from:#fcd34d var(--tw-gradient-from-position);--tw-gradient-to:rgb(252 211 77 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-amber-400{--tw-gradient-from:#fbbf24 var(--tw-gradient-from-position);--tw-gradient-to:rgb(251 191 36 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-emerald-500{--tw-gradient-from:#10b981 var(--tw-gradient-from-position);--tw-gradient-to:rgb(16 185 129 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-emerald-600{--tw-gradient-from:#059669 var(--tw-gradient-from-position);--tw-gradient-to:rgb(5 150 105 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-indigo-950{--tw-gradient-from:#1e1b4b var(--tw-gradient-from-position);--tw-gradient-to:rgb(30 27 75 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-slate-900{--tw-gradient-from:#0f172a var(--tw-gradient-from-position);--tw-gradient-to:rgb(15 23 42 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-indigo-950{--tw-gradient-to:rgb(30 27 75 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #1e1b4b var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-rose-200{--tw-gradient-to:rgb(254 205 211 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #fecdd3 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-rose-400{--tw-gradient-to:rgb(251 113 133 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #fb7185 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-slate-900{--tw-gradient-to:rgb(15 23 42 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #0f172a var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-teal-700{--tw-gradient-to:rgb(15 118 110 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #0f766e var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-indigo-200{--tw-gradient-to:#c7d2fe var(--tw-gradient-to-position)}.to-indigo-500{--tw-gradient-to:#6366f1 var(--tw-gradient-to-position)}.to-indigo-900{--tw-gradient-to:#312e81 var(--tw-gradient-to-position)}.to-slate-900{--tw-gradient-to:#0f172a var(--tw-gradient-to-position)}.to-teal-600{--tw-gradient-to:#0d9488 var(--tw-gradient-to-position)}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.fill-current{fill:currentColor}.p-0\.5{padding:0.125rem}.p-1{padding:0.25rem}.p-1\.5{padding:0.375rem}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-2\.5{padding:0.625rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.pb-1{padding-bottom:0.25rem}.pb-2{padding-bottom:0.5rem}.pb-28{padding-bottom:7rem}.pl-7{padding-left:1.75rem}.pr-1{padding-right:0.25rem}.pr-3{padding-right:0.75rem}.pt-1{padding-top:0.25rem}.pt-2{padding-top:0.5rem}.pt-4{padding-top:1rem}.pb-4{padding-bottom:1rem}.pt-3{padding-top:0.75rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.font-sans{font-family:Outfit, Inter, Noto Sans Devanagari, sans-serif}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-\[9px\]{font-size:9px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-2xl{font-size:1.5rem;line-height:2rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.font-normal{font-weight:400}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-wide{letter-spacing:0.025em}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.text-amber-400{--tw-text-opacity:1;color:rgb(251 191 36 / var(--tw-text-opacity, 1))}.text-amber-500{--tw-text-opacity:1;color:rgb(245 158 11 / var(--tw-text-opacity, 1))}.text-amber-600{--tw-text-opacity:1;color:rgb(217 119 6 / var(--tw-text-opacity, 1))}.text-amber-700{--tw-text-opacity:1;color:rgb(180 83 9 / var(--tw-text-opacity, 1))}.text-amber-800{--tw-text-opacity:1;color:rgb(146 64 14 / var(--tw-text-opacity, 1))}.text-amber-950{--tw-text-opacity:1;color:rgb(69 26 3 / var(--tw-text-opacity, 1))}.text-emerald-200{--tw-text-opacity:1;color:rgb(167 243 208 / var(--tw-text-opacity, 1))}.text-emerald-300{--tw-text-opacity:1;color:rgb(110 231 183 / var(--tw-text-opacity, 1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.text-emerald-600{--tw-text-opacity:1;color:rgb(5 150 105 / var(--tw-text-opacity, 1))}.text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87 / var(--tw-text-opacity, 1))}.text-indigo-200{--tw-text-opacity:1;color:rgb(199 210 254 / var(--tw-text-opacity, 1))}.text-indigo-300{--tw-text-opacity:1;color:rgb(165 180 252 / var(--tw-text-opacity, 1))}.text-indigo-400{--tw-text-opacity:1;color:rgb(129 140 248 / var(--tw-text-opacity, 1))}.text-indigo-600{--tw-text-opacity:1;color:rgb(79 70 229 / var(--tw-text-opacity, 1))}.text-rose-400{--tw-text-opacity:1;color:rgb(251 113 133 / var(--tw-text-opacity, 1))}.text-rose-600{--tw-text-opacity:1;color:rgb(225 29 72 / var(--tw-text-opacity, 1))}.text-rose-700{--tw-text-opacity:1;color:rgb(190 18 60 / var(--tw-text-opacity, 1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-slate-950{--tw-text-opacity:1;color:rgb(2 6 23 / var(--tw-text-opacity, 1))}.text-teal-600{--tw-text-opacity:1;color:rgb(13 148 136 / var(--tw-text-opacity, 1))}.text-transparent{color:transparent}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-white\/70{color:rgb(255 255 255 / 0.7)}.text-indigo-700{--tw-text-opacity:1;color:rgb(67 56 202 / var(--tw-text-opacity, 1))}.text-indigo-900{--tw-text-opacity:1;color:rgb(49 46 129 / var(--tw-text-opacity, 1))}.text-rose-200{--tw-text-opacity:1;color:rgb(254 205 211 / var(--tw-text-opacity, 1))}.text-emerald-800{--tw-text-opacity:1;color:rgb(6 95 70 / var(--tw-text-opacity, 1))}.line-through{-webkit-text-decoration-line:line-through;text-decoration-line:line-through}.opacity-0{opacity:0}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur{--tw-backdrop-blur:blur(8px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-150{transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:border-amber-300:hover{--tw-border-opacity:1;border-color:rgb(252 211 77 / var(--tw-border-opacity, 1))}.hover\:border-emerald-300:hover{--tw-border-opacity:1;border-color:rgb(110 231 183 / var(--tw-border-opacity, 1))}.hover\:border-emerald-400:hover{--tw-border-opacity:1;border-color:rgb(52 211 153 / var(--tw-border-opacity, 1))}.hover\:border-indigo-300:hover{--tw-border-opacity:1;border-color:rgb(165 180 252 / var(--tw-border-opacity, 1))}.hover\:border-rose-300:hover{--tw-border-opacity:1;border-color:rgb(253 164 175 / var(--tw-border-opacity, 1))}.hover\:bg-amber-600:hover{--tw-bg-opacity:1;background-color:rgb(217 119 6 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-50:hover{--tw-bg-opacity:1;background-color:rgb(236 253 245 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-600:hover{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-600\/40:hover{background-color:rgb(5 150 105 / 0.4)}.hover\:bg-emerald-700:hover{--tw-bg-opacity:1;background-color:rgb(4 120 87 / var(--tw-bg-opacity, 1))}.hover\:bg-indigo-700:hover{--tw-bg-opacity:1;background-color:rgb(67 56 202 / var(--tw-bg-opacity, 1))}.hover\:bg-rose-100:hover{--tw-bg-opacity:1;background-color:rgb(255 228 230 / var(--tw-bg-opacity, 1))}.hover\:bg-rose-700:hover{--tw-bg-opacity:1;background-color:rgb(190 18 60 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-300:hover{--tw-bg-opacity:1;background-color:rgb(203 213 225 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-50:hover{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-900:hover{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-100:hover{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.hover\:bg-amber-200:hover{--tw-bg-opacity:1;background-color:rgb(253 230 138 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-100:hover{--tw-bg-opacity:1;background-color:rgb(209 250 229 / var(--tw-bg-opacity, 1))}.hover\:bg-indigo-100:hover{--tw-bg-opacity:1;background-color:rgb(224 231 255 / var(--tw-bg-opacity, 1))}.hover\:bg-rose-50:hover{--tw-bg-opacity:1;background-color:rgb(255 241 242 / var(--tw-bg-opacity, 1))}.hover\:from-emerald-600:hover{--tw-gradient-from:#059669 var(--tw-gradient-from-position);--tw-gradient-to:rgb(5 150 105 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:to-teal-700:hover{--tw-gradient-to:#0f766e var(--tw-gradient-to-position)}.hover\:text-amber-500:hover{--tw-text-opacity:1;color:rgb(245 158 11 / var(--tw-text-opacity, 1))}.hover\:text-emerald-500:hover{--tw-text-opacity:1;color:rgb(16 185 129 / var(--tw-text-opacity, 1))}.hover\:text-rose-500:hover{--tw-text-opacity:1;color:rgb(244 63 94 / var(--tw-text-opacity, 1))}.hover\:text-teal-700:hover{--tw-text-opacity:1;color:rgb(15 118 110 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:text-slate-900:hover{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.hover\:text-rose-600:hover{--tw-text-opacity:1;color:rgb(225 29 72 / var(--tw-text-opacity, 1))}.focus\:border-amber-500:focus{--tw-border-opacity:1;border-color:rgb(245 158 11 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-1:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-amber-500\/30:focus{--tw-ring-color:rgb(245 158 11 / 0.3)}.focus\:ring-emerald-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(16 185 129 / var(--tw-ring-opacity, 1))}.focus\:ring-indigo-500\/30:focus{--tw-ring-color:rgb(99 102 241 / 0.3)}.focus\:ring-emerald-500\/30:focus{--tw-ring-color:rgb(16 185 129 / 0.3)}.focus\:ring-rose-500\/30:focus{--tw-ring-color:rgb(244 63 94 / 0.3)}.active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (min-width: 640px){.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:p-5{padding:1.25rem}.sm\:p-8{padding:2rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}.sm\:text-xs{font-size:0.75rem;line-height:1rem}}@media (min-width: 768px){.md\:block{display:block}.md\:hidden{display:none}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:flex-col{flex-direction:column}.md\:items-center{align-items:center}.md\:p-6{padding:1.5rem}.md\:pb-12{padding-bottom:3rem}}@media (min-width: 1024px){.lg\:col-span-2{grid-column:span 2 / span 2}.lg\:flex{display:flex}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}</style></head>
+<body class="bg-slate-100 text-slate-800 font-sans min-h-screen flex flex-col pb-28 md:pb-12 select-none">
+
+  <!-- TOP HEADER -->
+  <header class="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white shadow-xl sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <!-- Cute Pussy Cat Mascot / Icon -->
+        <div class="relative group cursor-pointer" onclick="showToast('Meow! Welcome to AVHII DATABASE APP 1.0 🐾', 'info')">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-400 via-rose-400 to-indigo-500 p-0.5 shadow-lg transform transition-transform active:scale-95 group-hover:scale-105">
+            <div class="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center p-1 overflow-hidden">
+              <!-- Custom Cute Pussy Cat SVG -->
+              <svg viewBox="0 0 100 100" class="w-9 h-9 fill-current" xmlns="http://www.w3.org/2000/svg">
+                <!-- Cat Ears -->
+                <polygon points="20,40 30,10 46,32" fill="#FB7185" stroke="#FEF3C7" stroke-width="2" stroke-linejoin="round"></polygon>
+                <polygon points="26,36 32,20 42,32" fill="#F43F5E"></polygon>
+                <polygon points="80,40 70,10 54,32" fill="#FB7185" stroke="#FEF3C7" stroke-width="2" stroke-linejoin="round"></polygon>
+                <polygon points="74,36 68,20 58,32" fill="#F43F5E"></polygon>
+                <!-- Cat Head Base -->
+                <ellipse cx="50" cy="56" rx="36" ry="32" fill="#FEF3C7" stroke="#334155" stroke-width="2"></ellipse>
+                <!-- Cheeks Blush -->
+                <circle cx="28" cy="62" r="6" fill="#FDA4AF" opacity="0.8"></circle>
+                <circle cx="72" cy="62" r="6" fill="#FDA4AF" opacity="0.8"></circle>
+                <!-- Big Anime Eyes -->
+                <ellipse cx="36" cy="50" rx="6" ry="8" fill="#0F172A"></ellipse>
+                <ellipse cx="64" cy="50" rx="6" ry="8" fill="#0F172A"></ellipse>
+                <circle cx="34" cy="47" r="2.5" fill="#FFFFFF"></circle>
+                <circle cx="38" cy="53" r="1.2" fill="#FFFFFF"></circle>
+                <circle cx="62" cy="47" r="2.5" fill="#FFFFFF"></circle>
+                <circle cx="66" cy="53" r="1.2" fill="#FFFFFF"></circle>
+                <!-- Cute Nose -->
+                <polygon points="50,58 46,54 54,54" fill="#E11D48"></polygon>
+                <!-- Cat Mouth / Smile -->
+                <path d="M46,60 Q50,65 50,60 Q50,65 54,60" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round"></path>
+                <!-- Whiskers -->
+                <line x1="15" y1="53" x2="27" y2="55" stroke="#64748B" stroke-width="2" stroke-linecap="round"></line>
+                <line x1="14" y1="62" x2="26" y2="61" stroke="#64748B" stroke-width="2" stroke-linecap="round"></line>
+                <line x1="85" y1="53" x2="73" y2="55" stroke="#64748B" stroke-width="2" stroke-linecap="round"></line>
+                <line x1="86" y1="62" x2="74" y2="61" stroke="#64748B" stroke-width="2" stroke-linecap="round"></line>
+              </svg>
+            </div>
+          </div>
+          <!-- Tiny paw badge -->
+          <span class="absolute -bottom-1 -right-1 bg-amber-400 text-slate-950 rounded-full w-4 h-4 flex items-center justify-center text-[9px] font-black border border-slate-900 shadow">🐾</span>
+        </div>
+
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="text-base sm:text-xl font-black tracking-tight bg-gradient-to-r from-amber-300 via-rose-200 to-indigo-200 bg-clip-text text-transparent uppercase">
+              AVHII DATABASE APP 1.0
+            </h1>
+            <span class="text-[10px] bg-amber-400 text-slate-950 px-2 py-0.5 rounded-full font-black tracking-wider shadow">PRO</span>
+          </div>
+          <p class="text-[11px] sm:text-xs text-slate-300 font-medium">रेंट, राशन, बिजली और दैनिक ख़र्चों का डेटाबेस</p>
+        </div>
+      </div>
+      
+      <!-- Right Side Actions: Download App Button & Date -->
+      <div class="flex items-center space-x-2">
+        <button onclick="openDownloadModal()" class="inline-flex items-center gap-1.5 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-bold text-xs px-3.5 py-2 rounded-xl shadow-md transition-all active:scale-95 border border-emerald-300/30">
+          <i class="fa-solid fa-cloud-arrow-down text-sm"></i>
+          <span>Download App</span>
+        </button>
+
+        <div class="hidden lg:flex items-center space-x-1.5 text-xs bg-white/10 px-3 py-1.5 rounded-lg border border-white/10 backdrop-blur">
+          <i class="fa-regular fa-calendar text-indigo-300"></i>
+          <span id="currentDateDisplay" class="font-medium text-slate-200">Sun, 25 Oct, 2026</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- DESKTOP NAVIGATION TABS -->
+    <div class="hidden md:block border-t border-white/10 bg-slate-950/40">
+      <div class="max-w-6xl mx-auto px-4 flex space-x-2">
+        <button onclick="switchTab('rent')" id="tab-rent-desktop" class="nav-tab-btn flex items-center gap-2 py-3 px-4 text-sm font-semibold border-b-2 transition-all border-transparent text-slate-300">
+          <i class="fa-solid fa-house text-indigo-400"></i> 1. Rent &amp; Receipt (किराया)
+        </button>
+        <button onclick="switchTab('electricity')" id="tab-electricity-desktop" class="nav-tab-btn flex items-center gap-2 py-3 px-4 text-sm font-semibold border-b-2 border-transparent text-slate-300 hover:text-white transition-all">
+          <i class="fa-solid fa-bolt text-amber-400"></i> 2. Electricity (बिजली बिल)
+        </button>
+        <button onclick="switchTab('daily')" id="tab-daily-desktop" class="nav-tab-btn flex items-center gap-2 py-3 px-4 text-sm font-semibold border-b-2 hover:text-white transition-all border-indigo-400 text-white">
+          <i class="fa-solid fa-wallet text-emerald-400"></i> 3. Daily Expenses (दैनिक खर्च)
+        </button>
+        <button onclick="switchTab('ration')" id="tab-ration-desktop" class="nav-tab-btn flex items-center gap-2 py-3 px-4 text-sm font-semibold border-b-2 border-transparent text-slate-300 hover:text-white transition-all">
+          <i class="fa-solid fa-basket-shopping text-rose-400"></i> 4. Ration List (राशन)
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- QUICK STATS DASHBOARD -->
+  <div class="max-w-6xl mx-auto px-4 pt-4 w-full">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+      <!-- Rent Status Widget -->
+      <div onclick="switchTab('rent')" class="cursor-pointer bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm flex items-center justify-between hover:border-indigo-300 transition-all">
+        <div>
+          <p class="text-xs text-slate-500 font-medium">This Month Rent</p>
+          <h3 id="statRentAmount" class="text-base sm:text-lg font-extrabold text-slate-800 mt-0.5">₹7,620</h3>
+          <span id="statRentBadge" class="inline-block text-[11px] font-semibold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full mt-1">Paid</span>
+        </div>
+        <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-lg">
+          <i class="fa-solid fa-building"></i>
+        </div>
+      </div>
+
+      <!-- Electricity Stat Widget -->
+      <div onclick="switchTab('electricity')" class="cursor-pointer bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm flex items-center justify-between hover:border-amber-300 transition-all">
+        <div>
+          <p class="text-xs text-slate-500 font-medium">Electricity Bill</p>
+          <h3 id="statPowerBill" class="text-base sm:text-lg font-extrabold text-amber-600 mt-0.5">₹920</h3>
+          <p id="statPowerUnits" class="text-[11px] text-slate-500 mt-1">115 Units consumed</p>
+        </div>
+        <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-500 flex items-center justify-center text-lg">
+          <i class="fa-solid fa-bolt-lightning"></i>
+        </div>
+      </div>
+
+      <!-- Daily Expenses Widget -->
+      <div onclick="switchTab('daily')" class="cursor-pointer bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm flex items-center justify-between hover:border-emerald-300 transition-all">
+        <div>
+          <p class="text-xs text-slate-500 font-medium">Today's Expenses</p>
+          <h3 id="statTodayExpense" class="text-base sm:text-lg font-extrabold text-emerald-600 mt-0.5">₹210</h3>
+          <p id="statMonthExpense" class="text-[11px] text-slate-500 mt-1">All: ₹348</p>
+        </div>
+        <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg">
+          <i class="fa-solid fa-receipt"></i>
+        </div>
+      </div>
+
+      <!-- Ration Status Widget -->
+      <div onclick="switchTab('ration')" class="cursor-pointer bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm flex items-center justify-between hover:border-rose-300 transition-all">
+        <div>
+          <p class="text-xs text-slate-500 font-medium">Ration Budget</p>
+          <h3 id="statRationCost" class="text-base sm:text-lg font-extrabold text-rose-600 mt-0.5">₹1,435</h3>
+          <p id="statRationCount" class="text-[11px] text-slate-500 mt-1">2 items pending</p>
+        </div>
+        <div class="w-10 h-10 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center text-lg">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="max-w-6xl mx-auto px-4 py-4 w-full flex-1">
+
+    <!-- ============================================== -->
+    <!-- SECTION 1: RENT & RECEIPT -->
+    <!-- ============================================== -->
+    <section id="section-rent" class="tab-section space-y-5 hidden">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+        <div>
+          <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+            <span class="w-2.5 h-6 bg-indigo-600 rounded-full inline-block"></span>
+            1. Rent Management &amp; Owner Receipt (मकान किराया)
+          </h2>
+          <p class="text-xs text-slate-500 mt-0.5">Makaan maalik ko rent dene ka hisaab aur official digital receipt WhatsApp par bhejein</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="openAddRentModal()" class="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white text-xs sm:text-sm font-semibold px-4 py-2.5 rounded-xl shadow-md transition-all active:scale-95">
+            <i class="fa-solid fa-plus"></i> New Rent Record
+          </button>
+        </div>
+      </div>
+
+      <!-- Current / Latest Rent Card Highlight -->
+      <div id="latestRentHighlightCard" class="bg-gradient-to-br from-indigo-950 via-slate-900 to-indigo-900 text-white rounded-3xl p-5 md:p-6 shadow-xl relative overflow-hidden">
+        <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-5">
+          <div class="space-y-3">
+            <div class="flex items-center gap-2">
+              <span id="highlightRentMonth" class="text-xs font-semibold px-2.5 py-1 rounded-full bg-white/20 text-white backdrop-blur">October 2026</span>
+              <span id="highlightRentStatus" class="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-400/30">Paid</span>
+            </div>
+            <div>
+              <p class="text-xs text-indigo-200">Total Payable (Room Rent + Bijli + Maintenance)</p>
+              <h3 id="highlightTotalAmount" class="text-3xl sm:text-4xl font-black tracking-tight mt-1">₹7,620</h3>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs text-slate-200 pt-1">
+              <div>
+                <p class="text-slate-400">Landlord (मालिक):</p>
+                <p id="highlightOwnerName" class="font-semibold text-white">Ramesh Kumar Sharma</p>
+              </div>
+              <div>
+                <p class="text-slate-400">Base Room Rent:</p>
+                <p id="highlightBaseRent" class="font-semibold text-white">₹6,500</p>
+              </div>
+              <div>
+                <p class="text-slate-400">Added Bijli Bill:</p>
+                <p id="highlightElectricity" class="font-semibold text-amber-300">₹920</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Action buttons for receipt -->
+          <div class="flex flex-col sm:flex-row md:flex-col gap-2.5 justify-center">
+            <button onclick="viewActiveRentReceipt()" class="inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-xs sm:text-sm px-4 py-2.5 rounded-xl shadow-lg transition-all active:scale-95">
+              <i class="fa-solid fa-file-invoice"></i> View / Print Receipt Slip
+            </button>
+            <button onclick="shareActiveReceiptWhatsApp()" class="inline-flex items-center justify-center gap-2 bg-emerald-600/30 hover:bg-emerald-600/40 border border-emerald-400/40 text-emerald-200 font-bold text-xs sm:text-sm px-4 py-2.5 rounded-xl transition-all active:scale-95">
+              <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i> Send to Owner on WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rent History Table -->
+      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+        <div class="p-4 border-b border-slate-100 flex items-center justify-between">
+          <h3 class="font-bold text-slate-800 text-sm flex items-center gap-2">
+            <i class="fa-solid fa-clock-rotate-left text-indigo-600"></i> Past Rent Records (पिछला रिकॉर्ड)
+          </h3>
+          <span class="text-xs text-slate-400 font-medium">Auto-calculated</span>
+        </div>
+        
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs sm:text-sm">
+            <thead class="bg-slate-50 text-slate-600 font-semibold uppercase text-[11px]">
+              <tr>
+                <th class="py-3 px-4">Month</th>
+                <th class="py-3 px-4">Owner Name</th>
+                <th class="py-3 px-4">Base Rent</th>
+                <th class="py-3 px-4">Electricity</th>
+                <th class="py-3 px-4">Total Amount</th>
+                <th class="py-3 px-4">Status</th>
+                <th class="py-3 px-4 text-center">Receipt &amp; Action</th>
+              </tr>
+            </thead>
+            <tbody id="rentRecordsTableBody" class="divide-y divide-slate-100 text-slate-700"><tr class="hover:bg-slate-50 transition-colors">
+          <td class="py-3 px-4 font-semibold text-slate-900">October 2026</td>
+          <td class="py-3 px-4">Ramesh Kumar Sharma</td>
+          <td class="py-3 px-4">₹6,500</td>
+          <td class="py-3 px-4 text-amber-600 font-medium">₹920</td>
+          <td class="py-3 px-4 font-bold text-indigo-700">₹7,620</td>
+          <td class="py-3 px-4">
+            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-700">
+              Paid
+            </span>
+          </td>
+          <td class="py-3 px-4 text-center">
+            <div class="inline-flex items-center gap-1.5">
+              <button onclick="viewReceiptByIndex(0)" title="View Receipt" class="p-1.5 bg-indigo-50 hover:bg-indigo-100 text-indigo-600 rounded-lg transition-all text-xs">
+                <i class="fa-solid fa-file-invoice"></i> Slip
+              </button>
+              <button onclick="shareWhatsAppByIndex(0)" title="Share to WhatsApp" class="p-1.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-600 rounded-lg transition-all text-xs">
+                <i class="fa-brands fa-whatsapp"></i> Send
+              </button>
+              <button onclick="deleteRentRecord('rent-1')" title="Delete" class="p-1.5 hover:bg-rose-50 text-slate-400 hover:text-rose-600 rounded-lg transition-all text-xs">
+                <i class="fa-regular fa-trash-can"></i>
+              </button>
+            </div>
+          </td>
+        </tr><tr class="hover:bg-slate-50 transition-colors">
+          <td class="py-3 px-4 font-semibold text-slate-900">September 2026</td>
+          <td class="py-3 px-4">Ramesh Kumar Sharma</td>
+          <td class="py-3 px-4">₹6,500</td>
+          <td class="py-3 px-4 text-amber-600 font-medium">₹880</td>
+          <td class="py-3 px-4 font-bold text-indigo-700">₹7,580</td>
+          <td class="py-3 px-4">
+            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-700">
+              Paid
+            </span>
+          </td>
+          <td class="py-3 px-4 text-center">
+            <div class="inline-flex items-center gap-1.5">
+              <button onclick="viewReceiptByIndex(1)" title="View Receipt" class="p-1.5 bg-indigo-50 hover:bg-indigo-100 text-indigo-600 rounded-lg transition-all text-xs">
+                <i class="fa-solid fa-file-invoice"></i> Slip
+              </button>
+              <button onclick="shareWhatsAppByIndex(1)" title="Share to WhatsApp" class="p-1.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-600 rounded-lg transition-all text-xs">
+                <i class="fa-brands fa-whatsapp"></i> Send
+              </button>
+              <button onclick="deleteRentRecord('rent-2')" title="Delete" class="p-1.5 hover:bg-rose-50 text-slate-400 hover:text-rose-600 rounded-lg transition-all text-xs">
+                <i class="fa-regular fa-trash-can"></i>
+              </button>
+            </div>
+          </td>
+        </tr></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- SECTION 2: ELECTRICITY (BIJLI BILL) -->
+    <!-- ============================================== -->
+    <section id="section-electricity" class="tab-section hidden space-y-5">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+        <div>
+          <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+            <span class="w-2.5 h-6 bg-amber-500 rounded-full inline-block"></span>
+            2. Electricity Meter Calculator (बिजली बिल मीटर)
+          </h2>
+          <p class="text-xs text-slate-500 mt-0.5">Meter reading dalo, units calculate karo aur sidhe rent me add karo</p>
+        </div>
+      </div>
+
+      <!-- Meter Reading Calculation Box -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <div class="lg:col-span-2 bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+          <h3 class="font-bold text-slate-800 text-sm flex items-center gap-2 border-b border-slate-100 pb-2">
+            <i class="fa-solid fa-calculator text-amber-500"></i> Calculate Current Month Units
+          </h3>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-slate-600 mb-1">Previous Reading (पिछली मीटर रीडिंग)</label>
+              <div class="relative">
+                <input type="number" id="meterPrevReading" value="1420" oninput="calculateElectricityBill()" class="w-full px-3 py-2 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-amber-500/30 focus:border-amber-500">
+                <span class="absolute right-3 top-2 text-xs text-slate-400 font-medium">Units</span>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-600 mb-1">Current Reading (वर्तमान मीटर रीडिंग)</label>
+              <div class="relative">
+                <input type="number" id="meterCurrentReading" value="1535" oninput="calculateElectricityBill()" class="w-full px-3 py-2 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-amber-500/30 focus:border-amber-500">
+                <span class="absolute right-3 top-2 text-xs text-slate-400 font-medium">Units</span>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-600 mb-1">Rate Per Unit (₹ प्रति यूनिट)</label>
+              <div class="relative">
+                <span class="absolute left-3 top-2 text-xs text-slate-400 font-bold">₹</span>
+                <input type="number" id="meterRatePerUnit" value="8" oninput="calculateElectricityBill()" class="w-full pl-7 pr-3 py-2 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-amber-500/30 focus:border-amber-500">
+                <span class="absolute right-3 top-2 text-xs text-slate-400">/unit</span>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-600 mb-1">Fixed / Other Charges (यदि कोई हो)</label>
+              <div class="relative">
+                <span class="absolute left-3 top-2 text-xs text-slate-400 font-bold">₹</span>
+                <input type="number" id="meterFixedCharges" value="0" oninput="calculateElectricityBill()" class="w-full pl-7 pr-3 py-2 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-amber-500/30 focus:border-amber-500">
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-amber-50 border border-amber-200/80 rounded-xl p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div>
+              <p class="text-xs text-amber-800 font-medium">Total Consumed Units: <span id="calcTotalUnits" class="font-extrabold text-amber-950 text-sm">115</span> Units</p>
+              <p class="text-xs text-amber-700">Formula: (1535 - 1420) × ₹8</p>
+            </div>
+            <div class="text-right">
+              <span class="text-xs text-amber-800 font-medium">Total Bijli Bill:</span>
+              <h4 id="calcTotalBill" class="text-xl font-black text-amber-950">₹920</h4>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-end gap-2 pt-2">
+            <button onclick="saveElectricityReading()" class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-white font-semibold text-xs sm:text-sm px-4 py-2 rounded-xl transition-all shadow-sm">
+              <i class="fa-solid fa-floppy-disk"></i> Save Reading
+            </button>
+            <button onclick="applyElectricityToLatestRent()" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-xs sm:text-sm px-4 py-2 rounded-xl transition-all shadow-sm">
+              <i class="fa-solid fa-link"></i> Add to This Month's Rent
+            </button>
+          </div>
+        </div>
+
+        <!-- Meter Reading Logs -->
+        <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+          <h3 class="font-bold text-slate-800 text-sm flex items-center justify-between border-b border-slate-100 pb-2">
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-clock-rotate-left text-amber-500"></i> Saved Readings</span>
+            <span class="text-[11px] text-slate-400">History</span>
+          </h3>
+          <div id="meterHistoryList" class="space-y-2 max-h-72 overflow-y-auto pr-1"><div class="p-2.5 rounded-xl border border-slate-100 bg-slate-50 flex items-center justify-between text-xs">
+          <div>
+            <div class="font-semibold text-slate-800">115 Units <span class="text-[11px] text-slate-400 font-normal">(1420 → 1535)</span></div>
+            <span class="text-[10px] text-slate-500">2026-10-01 @ ₹8/unit</span>
+          </div>
+          <div class="text-right">
+            <span class="font-bold text-amber-700">₹920</span>
+          </div>
+        </div><div class="p-2.5 rounded-xl border border-slate-100 bg-slate-50 flex items-center justify-between text-xs">
+          <div>
+            <div class="font-semibold text-slate-800">110 Units <span class="text-[11px] text-slate-400 font-normal">(1310 → 1420)</span></div>
+            <span class="text-[10px] text-slate-500">2026-09-01 @ ₹8/unit</span>
+          </div>
+          <div class="text-right">
+            <span class="font-bold text-amber-700">₹880</span>
+          </div>
+        </div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- SECTION 3: DAILY EXPENSES (दैनिक खर्च) -->
+    <!-- ============================================== -->
+    <section id="section-daily" class="tab-section space-y-5 block">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+        <div>
+          <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+            <span class="w-2.5 h-6 bg-emerald-500 rounded-full inline-block"></span>
+            3. Daily Expenses Tracker (रोज़ाना ख़र्चे)
+          </h2>
+          <p class="text-xs text-slate-500 mt-0.5">Chai-nashta, travel, auto, dudh, sabzi aur rozana ke hisaab</p>
+        </div>
+        <button onclick="openAddExpenseModal()" class="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-semibold px-4 py-2.5 rounded-xl shadow-md transition-all active:scale-95">
+          <i class="fa-solid fa-plus"></i> Add Daily Expense
+        </button>
+      </div>
+
+      <!-- Quick Add Preset Buttons -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-1">
+        <span class="text-xs text-slate-400 font-semibold shrink-0">Quick Add:</span>
+        <button onclick="quickAddExpense('Chai &amp; Snacks', 40, 'Food')" class="px-3 py-1.5 bg-white border border-slate-200 hover:border-emerald-400 rounded-xl text-xs text-slate-700 font-medium shrink-0 shadow-sm hover:bg-emerald-50 transition-all">
+          ☕ Chai/Snacks (₹40)
+        </button>
+        <button onclick="quickAddExpense('Auto / Travel Fare', 50, 'Transport')" class="px-3 py-1.5 bg-white border border-slate-200 hover:border-emerald-400 rounded-xl text-xs text-slate-700 font-medium shrink-0 shadow-sm hover:bg-emerald-50 transition-all">
+          🛺 Auto / Travel (₹50)
+        </button>
+        <button onclick="quickAddExpense('Milk / Dudh', 66, 'Food')" class="px-3 py-1.5 bg-white border border-slate-200 hover:border-emerald-400 rounded-xl text-xs text-slate-700 font-medium shrink-0 shadow-sm hover:bg-emerald-50 transition-all">
+          🥛 Milk (₹66)
+        </button>
+        <button onclick="quickAddExpense('Fresh Vegetables / Sabzi', 120, 'Vegetables')" class="px-3 py-1.5 bg-white border border-slate-200 hover:border-emerald-400 rounded-xl text-xs text-slate-700 font-medium shrink-0 shadow-sm hover:bg-emerald-50 transition-all">
+          🥦 Sabzi (₹120)
+        </button>
+      </div>
+
+      <!-- Filters & Expense List -->
+      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+        <div class="p-3.5 border-b border-slate-100 flex flex-wrap items-center justify-between gap-3">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-semibold text-slate-600">Category Filter:</span>
+            <select id="expenseFilterCategory" onchange="renderExpenses()" class="text-xs border border-slate-200 rounded-lg px-2.5 py-1.5 focus:outline-none focus:ring-1 focus:ring-emerald-500">
+              <option value="All">All Categories</option>
+              <option value="Food">Food &amp; Snacks</option>
+              <option value="Vegetables">Vegetables &amp; Fruits</option>
+              <option value="Transport">Travel / Auto</option>
+              <option value="Household">Household / Ghar</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="text-xs text-slate-500">
+            Total Filtered: <span id="filteredExpenseTotal" class="font-bold text-slate-800">₹348</span>
+          </div>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs sm:text-sm">
+            <thead class="bg-slate-50 text-slate-600 font-semibold uppercase text-[11px]">
+              <tr>
+                <th class="py-3 px-4">Date</th>
+                <th class="py-3 px-4">Item / Details</th>
+                <th class="py-3 px-4">Category</th>
+                <th class="py-3 px-4">Payment Mode</th>
+                <th class="py-3 px-4 text-right">Amount (₹)</th>
+                <th class="py-3 px-4 text-center">Action</th>
+              </tr>
+            </thead>
+            <tbody id="dailyExpensesTableBody" class="divide-y divide-slate-100 text-slate-700"><tr class="hover:bg-slate-50 transition-colors">
+          <td class="py-3 px-4 text-slate-500 font-medium">2026-10-25</td>
+          <td class="py-3 px-4 font-semibold text-slate-800">Milk (1.5L) &amp; Bread</td>
+          <td class="py-3 px-4">
+            <span class="inline-block text-[11px] font-medium px-2 py-0.5 rounded-md bg-slate-100 text-slate-700">
+              Food
+            </span>
+          </td>
+          <td class="py-3 px-4 text-slate-600">UPI</td>
+          <td class="py-3 px-4 text-right font-bold text-emerald-600">₹98</td>
+          <td class="py-3 px-4 text-center">
+            <button onclick="deleteExpense('exp-1')" title="Delete" class="p-1 hover:bg-rose-50 text-slate-400 hover:text-rose-600 rounded transition-all">
+              <i class="fa-regular fa-trash-can"></i>
+            </button>
+          </td>
+        </tr><tr class="hover:bg-slate-50 transition-colors">
+          <td class="py-3 px-4 text-slate-500 font-medium">2026-10-25</td>
+          <td class="py-3 px-4 font-semibold text-slate-800">Auto fare to market</td>
+          <td class="py-3 px-4">
+            <span class="inline-block text-[11px] font-medium px-2 py-0.5 rounded-md bg-slate-100 text-slate-700">
+              Transport
+            </span>
+          </td>
+          <td class="py-3 px-4 text-slate-600">Cash</td>
+          <td class="py-3 px-4 text-right font-bold text-emerald-600">₹40</td>
+          <td class="py-3 px-4 text-center">
+            <button onclick="deleteExpense('exp-2')" title="Delete" class="p-1 hover:bg-rose-50 text-slate-400 hover:text-rose-600 rounded transition-all">
+              <i class="fa-regular fa-trash-can"></i>
+            </button>
+          </td>
+        </tr><tr class="hover:bg-slate-50 transition-colors">
+          <td class="py-3 px-4 text-slate-500 font-medium">2026-10-24</td>
+          <td class="py-3 px-4 font-semibold text-slate-800">Evening Chai &amp; Samosa</td>
+          <td class="py-3 px-4">
+            <span class="inline-block text-[11px] font-medium px-2 py-0.5 rounded-md bg-slate-100 text-slate-700">
+              Food
+            </span>
+          </td>
+          <td class="py-3 px-4 text-slate-600">UPI</td>
+          <td class="py-3 px-4 text-right font-bold text-emerald-600">₹50</td>
+          <td class="py-3 px-4 text-center">
+            <button onclick="deleteExpense('exp-3')" title="Delete" class="p-1 hover:bg-rose-50 text-slate-400 hover:text-rose-600 rounded transition-all">
+              <i class="fa-regular fa-trash-can"></i>
+            </button>
+          </td>
+        </tr><tr class="hover:bg-slate-50 transition-colors">
+          <td class="py-3 px-4 text-slate-500 font-medium">2026-10-24</td>
+          <td class="py-3 px-4 font-semibold text-slate-800">Fresh Vegetables (Aloo, Pyaaz, Tamatar)</td>
+          <td class="py-3 px-4">
+            <span class="inline-block text-[11px] font-medium px-2 py-0.5 rounded-md bg-slate-100 text-slate-700">
+              Vegetables
+            </span>
+          </td>
+          <td class="py-3 px-4 text-slate-600">Cash</td>
+          <td class="py-3 px-4 text-right font-bold text-emerald-600">₹160</td>
+          <td class="py-3 px-4 text-center">
+            <button onclick="deleteExpense('exp-4')" title="Delete" class="p-1 hover:bg-rose-50 text-slate-400 hover:text-rose-600 rounded transition-all">
+              <i class="fa-regular fa-trash-can"></i>
+            </button>
+          </td>
+        </tr></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- SECTION 4: RATION DETAILS (राशन सामान) -->
+    <!-- ============================================== -->
+    <section id="section-ration" class="tab-section hidden space-y-5">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+        <div>
+          <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+            <span class="w-2.5 h-6 bg-rose-500 rounded-full inline-block"></span>
+            4. Monthly Ration Checklist (राशन सामग्री)
+          </h2>
+          <p class="text-xs text-slate-500 mt-0.5">Aata, chawal, tel, daal aur baki grocery ka hisaab aur buying status</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="addCommonRationPresets()" class="inline-flex items-center gap-1.5 bg-rose-50 text-rose-700 hover:bg-rose-100 border border-rose-200 text-xs font-semibold px-3 py-2 rounded-xl transition-all">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> + Add Standard Items
+          </button>
+          <button onclick="openAddRationModal()" class="inline-flex items-center gap-1.5 bg-rose-600 hover:bg-rose-700 text-white text-xs sm:text-sm font-semibold px-4 py-2 rounded-xl shadow-md transition-all active:scale-95">
+            <i class="fa-solid fa-plus"></i> Add Item
+          </button>
+        </div>
+      </div>
+
+      <!-- Ration Summary Cards -->
+      <div class="grid grid-cols-3 gap-3">
+        <div class="bg-white p-3 rounded-2xl border border-slate-200 text-center">
+          <span class="text-[11px] text-slate-500 font-medium">Estimated Total</span>
+          <h4 id="rationEstTotal" class="text-base sm:text-lg font-black text-slate-800 mt-0.5">₹1,435</h4>
+        </div>
+        <div class="bg-emerald-50 p-3 rounded-2xl border border-emerald-200 text-center">
+          <span class="text-[11px] text-emerald-700 font-medium">Bought (खरीद लिया)</span>
+          <h4 id="rationBoughtTotal" class="text-base sm:text-lg font-black text-emerald-700 mt-0.5">₹865</h4>
+        </div>
+        <div class="bg-rose-50 p-3 rounded-2xl border border-rose-200 text-center">
+          <span class="text-[11px] text-rose-700 font-medium">Remaining (बाकी है)</span>
+          <h4 id="rationPendingTotal" class="text-base sm:text-lg font-black text-rose-700 mt-0.5">₹570</h4>
+        </div>
+      </div>
+
+      <!-- Ration List Table -->
+      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs sm:text-sm">
+            <thead class="bg-slate-50 text-slate-600 font-semibold uppercase text-[11px]">
+              <tr>
+                <th class="py-3 px-4">Status</th>
+                <th class="py-3 px-4">Item Name</th>
+                <th class="py-3 px-4">Quantity</th>
+                <th class="py-3 px-4">Category</th>
+                <th class="py-3 px-4 text-right">Est. Price (₹)</th>
+                <th class="py-3 px-4 text-center">Action</th>
+              </tr>
+            </thead>
+            <tbody id="rationTableBody" class="divide-y divide-slate-100 text-slate-700"><tr class="hover:bg-slate-50 transition-colors">
+          <td class="py-3 px-4">
+            <button onclick="toggleRationStatus('rat-1')" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold cursor-pointer transition-all bg-emerald-100 text-emerald-800">
+              <i class="fa-solid fa-check"></i>
+              Bought
+            </button>
+          </td>
+          <td class="py-3 px-4 font-semibold text-slate-800 line-through text-slate-400">
+            Aashirvaad Shudh Chakki Aata
+          </td>
+          <td class="py-3 px-4 font-medium text-slate-600">10 kg</td>
+          <td class="py-3 px-4 text-slate-500 text-xs">Grains &amp; Flours</td>
+          <td class="py-3 px-4 text-right font-bold text-slate-800">₹420</td>
+          <td class="py-3 px-4 text-center">
+            <button onclick="deleteRationItem('rat-1')" title="Delete" class="p-1 hover:bg-rose-50 text-slate-400 hover:text-rose-600 rounded transition-all">
+              <i class="fa-regular fa-trash-can"></i>
+            </button>
+          </td>
+        </tr><tr class="hover:bg-slate-50 transition-colors">
+          <td class="py-3 px-4">
+            <button onclick="toggleRationStatus('rat-2')" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold cursor-pointer transition-all bg-emerald-100 text-emerald-800">
+              <i class="fa-solid fa-check"></i>
+              Bought
+            </button>
+          </td>
+          <td class="py-3 px-4 font-semibold text-slate-800 line-through text-slate-400">
+            India Gate Basmati Rice
+          </td>
+          <td class="py-3 px-4 font-medium text-slate-600">5 kg</td>
+          <td class="py-3 px-4 text-slate-500 text-xs">Grains &amp; Flours</td>
+          <td class="py-3 px-4 text-right font-bold text-slate-800">₹380</td>
+          <td class="py-3 px-4 text-center">
+            <button onclick="deleteRationItem('rat-2')" title="Delete" class="p-1 hover:bg-rose-50 text-slate-400 hover:text-rose-600 rounded transition-all">
+              <i class="fa-regular fa-trash-can"></i>
+            </button>
+          </td>
+        </tr><tr class="hover:bg-slate-50 transition-colors">
+          <td class="py-3 px-4">
+            <button onclick="toggleRationStatus('rat-3')" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold cursor-pointer transition-all bg-amber-100 text-amber-800 hover:bg-amber-200">
+              <i class="fa-solid fa-hourglass-half"></i>
+              To Buy
+            </button>
+          </td>
+          <td class="py-3 px-4 font-semibold text-slate-800 ">
+            Mustard Oil (Kacchi Ghani)
+          </td>
+          <td class="py-3 px-4 font-medium text-slate-600">2 Litre</td>
+          <td class="py-3 px-4 text-slate-500 text-xs">Oil &amp; Ghee</td>
+          <td class="py-3 px-4 text-right font-bold text-slate-800">₹290</td>
+          <td class="py-3 px-4 text-center">
+            <button onclick="deleteRationItem('rat-3')" title="Delete" class="p-1 hover:bg-rose-50 text-slate-400 hover:text-rose-600 rounded transition-all">
+              <i class="fa-regular fa-trash-can"></i>
+            </button>
+          </td>
+        </tr><tr class="hover:bg-slate-50 transition-colors">
+          <td class="py-3 px-4">
+            <button onclick="toggleRationStatus('rat-4')" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold cursor-pointer transition-all bg-amber-100 text-amber-800 hover:bg-amber-200">
+              <i class="fa-solid fa-hourglass-half"></i>
+              To Buy
+            </button>
+          </td>
+          <td class="py-3 px-4 font-semibold text-slate-800 ">
+            Toor / Arhar Dal
+          </td>
+          <td class="py-3 px-4 font-medium text-slate-600">2 kg</td>
+          <td class="py-3 px-4 text-slate-500 text-xs">Pulses &amp; Dal</td>
+          <td class="py-3 px-4 text-right font-bold text-slate-800">₹280</td>
+          <td class="py-3 px-4 text-center">
+            <button onclick="deleteRationItem('rat-4')" title="Delete" class="p-1 hover:bg-rose-50 text-slate-400 hover:text-rose-600 rounded transition-all">
+              <i class="fa-regular fa-trash-can"></i>
+            </button>
+          </td>
+        </tr><tr class="hover:bg-slate-50 transition-colors">
+          <td class="py-3 px-4">
+            <button onclick="toggleRationStatus('rat-5')" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold cursor-pointer transition-all bg-emerald-100 text-emerald-800">
+              <i class="fa-solid fa-check"></i>
+              Bought
+            </button>
+          </td>
+          <td class="py-3 px-4 font-semibold text-slate-800 line-through text-slate-400">
+            Tata Salt &amp; Haldi Powder
+          </td>
+          <td class="py-3 px-4 font-medium text-slate-600">1 Pkt each</td>
+          <td class="py-3 px-4 text-slate-500 text-xs">Spices &amp; Salt</td>
+          <td class="py-3 px-4 text-right font-bold text-slate-800">₹65</td>
+          <td class="py-3 px-4 text-center">
+            <button onclick="deleteRationItem('rat-5')" title="Delete" class="p-1 hover:bg-rose-50 text-slate-400 hover:text-rose-600 rounded transition-all">
+              <i class="fa-regular fa-trash-can"></i>
+            </button>
+          </td>
+        </tr></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================== -->
+  <!-- MOBILE BOTTOM NAVIGATION KEYS (SCREEN BUTTONS) -->
+  <!-- ============================================== -->
+  <nav class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200/90 shadow-2xl px-2 py-1.5 flex items-center justify-around">
+    
+    <!-- Key 1: Rent -->
+    <button onclick="switchTab('rent')" id="tab-rent-mobile" class="flex flex-col items-center justify-center p-1.5 rounded-xl transition-all flex-1 text-slate-400">
+      <i class="fa-solid fa-house text-lg"></i>
+      <span class="text-[10px] font-bold mt-1">1. Rent</span>
+    </button>
+
+    <!-- Key 2: Electricity -->
+    <button onclick="switchTab('electricity')" id="tab-electricity-mobile" class="flex flex-col items-center justify-center p-1.5 rounded-xl text-slate-400 hover:text-amber-500 transition-all flex-1">
+      <i class="fa-solid fa-bolt text-lg"></i>
+      <span class="text-[10px] font-bold mt-1">2. Bijli</span>
+    </button>
+
+    <!-- Key 3: Daily Expenses -->
+    <button onclick="switchTab('daily')" id="tab-daily-mobile" class="flex flex-col items-center justify-center p-1.5 rounded-xl hover:text-emerald-500 transition-all flex-1 text-indigo-600 bg-indigo-50/80">
+      <i class="fa-solid fa-wallet text-lg"></i>
+      <span class="text-[10px] font-bold mt-1">3. Kharcha</span>
+    </button>
+
+    <!-- Key 4: Ration -->
+    <button onclick="switchTab('ration')" id="tab-ration-mobile" class="flex flex-col items-center justify-center p-1.5 rounded-xl text-slate-400 hover:text-rose-500 transition-all flex-1">
+      <i class="fa-solid fa-basket-shopping text-lg"></i>
+      <span class="text-[10px] font-bold mt-1">4. Ration</span>
+    </button>
+
+    <!-- Key 5: Download App -->
+    <button onclick="openDownloadModal()" class="flex flex-col items-center justify-center p-1.5 rounded-xl text-teal-600 hover:text-teal-700 transition-all flex-1">
+      <i class="fa-solid fa-cloud-arrow-down text-lg"></i>
+      <span class="text-[10px] font-bold mt-1">App</span>
+    </button>
+  </nav>
+
+  <!-- ============================================== -->
+  <!-- MODAL: DOWNLOAD APP & INSTALLATION OPTIONS -->
+  <!-- ============================================== -->
+  <div id="downloadModal" class="fixed inset-0 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 z-50">
+    <div class="bg-white rounded-3xl w-full max-w-md shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-150 border border-slate-100">
+      <div class="bg-gradient-to-r from-emerald-600 via-teal-700 to-slate-900 text-white px-5 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-emerald-300 text-base">
+            <i class="fa-solid fa-download"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm sm:text-base leading-tight">Download &amp; Install App</h3>
+            <p class="text-[11px] text-emerald-200">AVHII DATABASE APP 1.0</p>
+          </div>
+        </div>
+        <button onclick="closeModal('downloadModal')" class="text-white/70 hover:text-white text-lg">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="p-5 space-y-4 max-h-[75vh] overflow-y-auto">
+        <!-- Direct File Download -->
+        <div class="p-4 rounded-2xl border-2 border-emerald-500/40 bg-emerald-50/60 flex items-start gap-3.5">
+          <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center shrink-0 text-lg shadow-sm">
+            <i class="fa-solid fa-file-arrow-down"></i>
+          </div>
+          <div class="flex-1">
+            <h4 class="text-xs sm:text-sm font-bold text-slate-900">Direct Download (.html App File)</h4>
+            <p class="text-[11px] text-slate-600 mt-0.5">Download karke Chrome ya phone ke kisi bhi browser se direct open karein.</p>
+            <button onclick="downloadSelfApp()" class="mt-2.5 inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl shadow-sm active:scale-95 transition-all">
+              <i class="fa-solid fa-download"></i> Download App File Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Add to Home Screen Method -->
+        <div class="p-4 rounded-2xl border border-slate-200 bg-slate-50 flex items-start gap-3.5">
+          <div class="w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center shrink-0 text-lg shadow-sm">
+            <i class="fa-solid fa-mobile-screen"></i>
+          </div>
+          <div class="flex-1 text-xs">
+            <h4 class="font-bold text-slate-900">Phone Me App Icon Kaise Lagayein:</h4>
+            <ol class="list-decimal list-inside text-slate-600 mt-1 space-y-1 text-[11px] leading-relaxed">
+              <li>Chrome browser me sabse upar <b>3 Dots (⋮)</b> dabayein.</li>
+              <li>Menu me <b>"Add to Home screen"</b> (होम स्क्रीन पर जोड़ें) chunein.</li>
+              <li>Aapke mobile screen par <b>AVHII DATABASE APP 1.0</b> ka cat icon ban jayega!</li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Copy Code Fallback -->
+        <div class="p-4 rounded-2xl border border-slate-200 bg-white flex items-start gap-3.5">
+          <div class="w-10 h-10 rounded-xl bg-slate-800 text-white flex items-center justify-center shrink-0 text-lg shadow-sm">
+            <i class="fa-solid fa-copy"></i>
+          </div>
+          <div class="flex-1">
+            <h4 class="text-xs sm:text-sm font-bold text-slate-900">Copy Full App Code</h4>
+            <p class="text-[11px] text-slate-600 mt-0.5">Agar browser download block kare toh 1-click me pura code copy karein aur <code>index.html</code> me save kar lein.</p>
+            <button onclick="copyCompleteAppCode()" class="mt-2.5 inline-flex items-center gap-1.5 bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold px-3 py-1.5 rounded-lg active:scale-95 transition-all">
+              <i class="fa-regular fa-clone"></i> Copy Code to Clipboard
+            </button>
+          </div>
+        </div>
+
+        <!-- Backup Data -->
+        <div class="p-4 rounded-2xl border border-slate-200 bg-white flex items-start gap-3.5">
+          <div class="w-10 h-10 rounded-xl bg-amber-500 text-white flex items-center justify-center shrink-0 text-lg shadow-sm">
+            <i class="fa-solid fa-database"></i>
+          </div>
+          <div class="flex-1">
+            <h4 class="text-xs sm:text-sm font-bold text-slate-900">Backup &amp; Restore Data</h4>
+            <p class="text-[11px] text-slate-600 mt-0.5">Apna rent, ration aur daily expense data JSON file me save karein.</p>
+            <div class="mt-2.5 flex items-center gap-2">
+              <button onclick="exportDataJSON()" class="inline-flex items-center gap-1 bg-amber-500 hover:bg-amber-600 text-white text-xs font-bold px-3 py-1.5 rounded-lg active:scale-95 transition-all">
+                <i class="fa-solid fa-file-export"></i> Backup
+              </button>
+              <label class="cursor-pointer inline-flex items-center gap-1 bg-slate-200 hover:bg-slate-300 text-slate-800 text-xs font-bold px-3 py-1.5 rounded-lg active:scale-95 transition-all">
+                <i class="fa-solid fa-file-import"></i> Restore
+                <input type="file" id="importJsonFileInput" accept=".json" onchange="importDataJSON(event)" class="hidden">
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-3.5 bg-slate-100 border-t border-slate-200 flex justify-end">
+        <button onclick="closeModal('downloadModal')" class="px-4 py-2 text-xs font-bold text-slate-700 bg-white border border-slate-300 hover:bg-slate-50 rounded-xl transition-all">
+          Done / Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================== -->
+  <!-- MODAL: ADD / EDIT RENT RECORD -->
+  <!-- ============================================== -->
+  <div id="rentModal" class="fixed inset-0 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 z-50 hidden">
+    <div class="bg-white rounded-2xl w-full max-w-lg shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-150">
+      <div class="bg-indigo-600 text-white px-5 py-4 flex items-center justify-between">
+        <h3 class="font-bold text-base flex items-center gap-2">
+          <i class="fa-solid fa-house"></i> Add Rent Details (किराया रिकॉर्ड)
+        </h3>
+        <button onclick="closeModal('rentModal')" class="text-indigo-200 hover:text-white text-lg">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <form onsubmit="handleSaveRent(event)" class="p-5 space-y-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1">Month &amp; Year (महीना)</label>
+            <input type="month" id="rentMonthYear" required="" class="w-full px-3 py-2 text-xs sm:text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500/30">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1">Owner Name (मालिक का नाम)</label>
+            <input type="text" id="rentOwnerName" placeholder="e.g. Ramesh Kumar Sharma" required="" class="w-full px-3 py-2 text-xs sm:text-sm rounded-xl border border-slate-200 focus:outline-none">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1">Tenant Name (किरायेदार का नाम)</label>
+            <input type="text" id="rentTenantName" placeholder="Rahul Verma" required="" class="w-full px-3 py-2 text-xs sm:text-sm rounded-xl border border-slate-200 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1">Room / Flat No. &amp; Address</label>
+            <input type="text" id="rentRoomNo" placeholder="Flat 202, Gokul Heights" required="" class="w-full px-3 py-2 text-xs sm:text-sm rounded-xl border border-slate-200 focus:outline-none">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-3 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1">Base Rent (₹)</label>
+            <input type="number" id="rentBaseAmount" placeholder="5000" required="" oninput="calculateRentModalTotal()" class="w-full px-3 py-2 text-xs sm:text-sm rounded-xl border border-slate-200 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1">Bijli Bill (₹)</label>
+            <input type="number" id="rentElecAmount" placeholder="0" oninput="calculateRentModalTotal()" class="w-full px-3 py-2 text-xs sm:text-sm rounded-xl border border-slate-200 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1">Other (₹)</label>
+            <input type="number" id="rentOtherAmount" placeholder="0" oninput="calculateRentModalTotal()" class="w-full px-3 py-2 text-xs sm:text-sm rounded-xl border border-slate-200 focus:outline-none">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1">Payment Status</label>
+            <select id="rentStatus" class="w-full px-3 py-2 text-xs sm:text-sm rounded-xl border border-slate-200 focus:outline-none">
+              <option value="Paid">Paid (दे दिया)</option>
+              <option value="Pending">Pending (बाक़ी है)</option>
+              <option value="Partial">Partial (आधा दिया)</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1">Payment Mode (माध्यम)</label>
+            <select id="rentPaymentMode" class="w-full px-3 py-2 text-xs sm:text-sm rounded-xl border border-slate-200 focus:outline-none">
+              <option value="UPI (GooglePay / PhonePe / Paytm)">UPI (GooglePay / PhonePe)</option>
+              <option value="Cash (नकद)">Cash (नकद)</option>
+              <option value="Bank Transfer">Bank Transfer</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1">UPI Txn Ref (Optional)</label>
+            <input type="text" id="rentTxnId" placeholder="UPI-1234567890" class="w-full px-3 py-2 text-xs sm:text-sm rounded-xl border border-slate-200 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1">Owner WhatsApp Phone</label>
+            <input type="tel" id="rentOwnerPhone" placeholder="98XXXXXXXX" class="w-full px-3 py-2 text-xs sm:text-sm rounded-xl border border-slate-200 focus:outline-none">
+          </div>
+        </div>
+
+        <div class="bg-indigo-50 p-3 rounded-xl flex items-center justify-between">
+          <span class="text-xs font-semibold text-indigo-900">Total Payable Amount:</span>
+          <span id="modalRentGrandTotal" class="text-base font-black text-indigo-700">₹7,420</span>
+        </div>
+
+        <div class="flex items-center justify-end gap-2 pt-2 border-t border-slate-100">
+          <button type="button" onclick="closeModal('rentModal')" class="px-4 py-2 text-xs font-semibold text-slate-600 hover:bg-slate-100 rounded-xl">Cancel</button>
+          <button type="submit" class="px-5 py-2 text-xs font-bold bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl shadow-md">Save Record</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ============================================== -->
+  <!-- MODAL: ADD DAILY EXPENSE -->
+  <!-- ============================================== -->
+  <div id="expenseModal" class="fixed inset-0 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 z-50 hidden">
+    <div class="bg-white rounded-2xl w-full max-w-md shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-150">
+      <div class="bg-emerald-600 text-white px-5 py-4 flex items-center justify-between">
+        <h3 class="font-bold text-base flex items-center gap-2">
+          <i class="fa-solid fa-wallet"></i> Add Daily Expense (दैनिक खर्च)
+        </h3>
+        <button onclick="closeModal('expenseModal')" class="text-emerald-200 hover:text-white text-lg">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <form onsubmit="handleSaveExpense(event)" class="p-5 space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1">Item / Description (खर्च का नाम)</label>
+          <input type="text" id="expenseTitle" placeholder="e.g. Chai, Auto, Dahi, Petrol" required="" class="w-full px-3 py-2 text-xs sm:text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/30">
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1">Amount (रुपये ₹)</label>
+            <input type="number" id="expenseAmount" placeholder="50" required="" class="w-full px-3 py-2 text-xs sm:text-sm rounded-xl border border-slate-200 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1">Date (तारीख़)</label>
+            <input type="date" id="expenseDate" required="" class="w-full px-3 py-2 text-xs sm:text-sm rounded-xl border border-slate-200 focus:outline-none">
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1">Category</label>
+            <select id="expenseCategory" class="w-full px-3 py-2 text-xs sm:text-sm rounded-xl border border-slate-200 focus:outline-none">
+              <option value="Food">Food / Snacks</option>
+              <option value="Vegetables">Vegetables / Fruits</option>
+              <option value="Transport">Travel / Auto</option>
+              <option value="Household">Household / Misc</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1">Paid Via</label>
+            <select id="expenseMode" class="w-full px-3 py-2 text-xs sm:text-sm rounded-xl border border-slate-200 focus:outline-none">
+              <option value="UPI">UPI</option>
+              <option value="Cash">Cash</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex items-center justify-end gap-2 pt-2 border-t border-slate-100">
+          <button type="button" onclick="closeModal('expenseModal')" class="px-4 py-2 text-xs font-semibold text-slate-600 hover:bg-slate-100 rounded-xl">Cancel</button>
+          <button type="submit" class="px-5 py-2 text-xs font-bold bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl shadow-md">Add Expense</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ============================================== -->
+  <!-- MODAL: ADD RATION ITEM -->
+  <!-- ============================================== -->
+  <div id="rationModal" class="fixed inset-0 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 z-50 hidden">
+    <div class="bg-white rounded-2xl w-full max-w-md shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-150">
+      <div class="bg-rose-600 text-white px-5 py-4 flex items-center justify-between">
+        <h3 class="font-bold text-base flex items-center gap-2">
+          <i class="fa-solid fa-basket-shopping"></i> Add Ration Item (राशन सामान)
+        </h3>
+        <button onclick="closeModal('rationModal')" class="text-rose-200 hover:text-white text-lg">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <form onsubmit="handleSaveRation(event)" class="p-5 space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1">Item Name (सामग्री का नाम)</label>
+          <input type="text" id="rationName" placeholder="e.g. Aata, Chawal, Mustard Oil, Toor Dal" required="" class="w-full px-3 py-2 text-xs sm:text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-rose-500/30">
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1">Quantity (मात्रा)</label>
+            <input type="text" id="rationQuantity" placeholder="e.g. 5 kg, 2 Litre, 1 Pkt" required="" class="w-full px-3 py-2 text-xs sm:text-sm rounded-xl border border-slate-200 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1">Est. Price (₹ अनुमानित मूल्य)</label>
+            <input type="number" id="rationPrice" placeholder="250" required="" class="w-full px-3 py-2 text-xs sm:text-sm rounded-xl border border-slate-200 focus:outline-none">
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1">Category</label>
+            <select id="rationCategory" class="w-full px-3 py-2 text-xs sm:text-sm rounded-xl border border-slate-200 focus:outline-none">
+              <option value="Grains &amp; Flours">Grains &amp; Aata</option>
+              <option value="Pulses &amp; Dal">Dals &amp; Pulses</option>
+              <option value="Oil &amp; Ghee">Oil &amp; Ghee</option>
+              <option value="Spices &amp; Salt">Spices &amp; Salt</option>
+              <option value="Cleaning &amp; Soap">Cleaning &amp; Soap</option>
+              <option value="Other">Other Grocery</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1">Status</label>
+            <select id="rationStatus" class="w-full px-3 py-2 text-xs sm:text-sm rounded-xl border border-slate-200 focus:outline-none">
+              <option value="pending">To Buy (ख़रीदना है)</option>
+              <option value="bought">Bought (ख़रीद लिया)</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex items-center justify-end gap-2 pt-2 border-t border-slate-100">
+          <button type="button" onclick="closeModal('rationModal')" class="px-4 py-2 text-xs font-semibold text-slate-600 hover:bg-slate-100 rounded-xl">Cancel</button>
+          <button type="submit" class="px-5 py-2 text-xs font-bold bg-rose-600 hover:bg-rose-700 text-white rounded-xl shadow-md">Add to List</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ============================================== -->
+  <!-- MODAL: OFFICIAL DIGITAL RENT RECEIPT -->
+  <!-- ============================================== -->
+  <div id="receiptModal" class="fixed inset-0 bg-black/70 backdrop-blur-xs flex items-center justify-center p-3 sm:p-5 z-50 hidden overflow-y-auto">
+    <div class="bg-white rounded-3xl w-full max-w-xl shadow-2xl overflow-hidden my-auto">
+      
+      <!-- Modal Top Controls (No-Print) -->
+      <div class="no-print bg-slate-900 text-white px-5 py-3.5 flex items-center justify-between">
+        <span class="text-xs font-bold tracking-wide flex items-center gap-2">
+          <i class="fa-solid fa-stamp text-amber-400"></i> OFFICIAL RENT RECEIPT SLIP
+        </span>
+        <div class="flex items-center gap-2">
+          <button onclick="printReceipt()" class="text-xs bg-indigo-600 hover:bg-indigo-700 text-white px-3 py-1.5 rounded-lg flex items-center gap-1 font-semibold transition-all">
+            <i class="fa-solid fa-print"></i> Print
+          </button>
+          <button onclick="shareDirectWhatsAppFromModal()" class="text-xs bg-emerald-600 hover:bg-emerald-700 text-white px-3 py-1.5 rounded-lg flex items-center gap-1 font-semibold transition-all">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+          </button>
+          <button onclick="closeModal('receiptModal')" class="text-slate-400 hover:text-white p-1 text-base">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- PRINTABLE RECEIPT CONTAINER -->
+      <div id="printableReceiptArea" class="p-6 sm:p-8 bg-white text-slate-800">
+        <!-- Receipt Header -->
+        <div class="border-b-2 border-slate-900 pb-4 mb-5 flex items-start justify-between">
+          <div>
+            <h2 class="text-2xl font-black text-slate-900 tracking-tight">HOUSE RENT RECEIPT</h2>
+            <p class="text-xs text-slate-600 font-semibold mt-0.5">किराया भुगतान पावती / Receipt</p>
+          </div>
+          <div class="text-right">
+            <p class="text-[11px] font-bold text-slate-400">RECEIPT NO.</p>
+            <p id="rcptNo" class="text-xs font-mono font-bold text-slate-800">HRR-2026-001</p>
+            <p id="rcptDate" class="text-[11px] text-slate-500 mt-0.5">Date: 25 Oct 2026</p>
+          </div>
+        </div>
+
+        <!-- Receipt Parties Info -->
+        <div class="grid grid-cols-2 gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-200 text-xs mb-5">
+          <div>
+            <p class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Tenant (किरायेदार):</p>
+            <p id="rcptTenantName" class="font-bold text-slate-900 text-sm mt-0.5">-</p>
+            <p id="rcptRoomAddress" class="text-slate-600 mt-0.5">-</p>
+          </div>
+          <div>
+            <p class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Landlord / Owner (मकान मालिक):</p>
+            <p id="rcptOwnerName" class="font-bold text-slate-900 text-sm mt-0.5">-</p>
+            <p id="rcptOwnerPhone" class="text-slate-600 mt-0.5">-</p>
+          </div>
+        </div>
+
+        <div class="mb-5 text-xs text-slate-700 bg-indigo-50/50 p-3 rounded-xl border border-indigo-100">
+          Received with thanks a sum towards house rent and utilities for the period of:
+          <span id="rcptPeriod" class="font-bold text-indigo-900">October 2026</span>
+        </div>
+
+        <!-- Itemized Breakdown Table -->
+        <table class="w-full text-xs text-left mb-5">
+          <thead>
+            <tr class="border-b border-slate-200 text-slate-500 font-bold uppercase text-[10px]">
+              <th class="py-2">Description</th>
+              <th class="py-2 text-right">Amount (₹)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 font-medium">
+            <tr>
+              <td class="py-2 text-slate-800">Base Room / House Rent</td>
+              <td id="rcptBaseRent" class="py-2 text-right font-semibold">₹0</td>
+            </tr>
+            <tr>
+              <td class="py-2 text-slate-800">
+                Electricity Bill (Units &amp; Submeter)
+                <span id="rcptElecDetail" class="block text-[11px] text-amber-700"></span>
+              </td>
+              <td id="rcptElectricity" class="py-2 text-right font-semibold text-amber-700">₹0</td>
+            </tr>
+            <tr>
+              <td class="py-2 text-slate-800">Water / Maintenance Charges</td>
+              <td id="rcptOther" class="py-2 text-right font-semibold">₹0</td>
+            </tr>
+            <tr class="border-t-2 border-slate-900 text-sm font-bold text-slate-900">
+              <td class="py-2.5">Total Amount Paid (कुल भुगतान)</td>
+              <td id="rcptGrandTotal" class="py-2.5 text-right font-black text-indigo-700 text-base">₹0</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Payment Meta & Signatures -->
+        <div class="grid grid-cols-2 gap-4 text-xs pt-3 border-t border-slate-200">
+          <div>
+            <p class="text-slate-500 font-medium">Payment Mode: <span id="rcptPayMode" class="font-bold text-slate-800">UPI</span></p>
+            <p class="text-slate-500 font-medium">Txn Ref ID: <span id="rcptTxnId" class="font-mono text-slate-800">-</span></p>
+            <p class="text-slate-500 font-medium">Status: <span id="rcptStatusBadge" class="font-bold text-emerald-600">PAID</span></p>
+          </div>
+          <div class="text-right flex flex-col justify-end">
+            <div class="border-t border-dashed border-slate-400 w-36 ml-auto mt-6 pt-1 text-[11px] text-slate-500 font-medium text-center">
+              Landlord Signature / Acknowledgement
+            </div>
+          </div>
+        </div>
+
+        <div class="text-[10px] text-slate-400 text-center mt-6">
+          * This is a computer generated rent receipt for record keeping &amp; verification.
+        </div>
+      </div>
+
+      <!-- Quick Copy & Share Bar at bottom of modal (No-Print) -->
+      <div class="no-print p-4 bg-slate-50 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3">
+        <button onclick="copyReceiptText()" class="text-xs text-slate-700 hover:text-slate-900 font-semibold flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-200 bg-white">
+          <i class="fa-regular fa-copy"></i> Copy Text Slip
+        </button>
+        <button onclick="closeModal('receiptModal')" class="text-xs font-semibold px-4 py-2 bg-slate-200 hover:bg-slate-300 rounded-xl transition-all">
+          Close
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast" class="fixed top-5 right-5 z-50 bg-slate-900 text-white text-xs font-semibold px-4 py-3 rounded-2xl shadow-2xl flex items-center gap-2 transform translate-y-[-100px] opacity-0 transition-all duration-300">
+    <i id="toastIcon" class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
+    <span id="toastMsg">Action completed successfully</span>
+  </div>
+
+  <!-- APP SCRIPT LOGIC -->
+  <script>
+    // ==========================================
+    // INITIAL IN-MEMORY APPLICATION STATE
+    // ==========================================
+    const state = {
+      activeTab: 'rent',
+      rentRecords: [
+        {
+          id: 'rent-1',
+          monthYear: '2026-10',
+          monthLabel: 'October 2026',
+          ownerName: 'Ramesh Kumar Sharma',
+          ownerPhone: '9876543210',
+          tenantName: 'Rahul Verma',
+          roomNo: 'Flat 202, Gokul Heights',
+          baseRent: 6500,
+          electricityAmount: 920,
+          electricityUnits: '115 Units (1420 - 1535 @ ₹8)',
+          otherCharges: 200,
+          totalAmount: 7620,
+          status: 'Paid',
+          paymentMode: 'UPI (GooglePay / PhonePe)',
+          txnId: 'UPI-9823487192',
+          date: '2026-10-05'
+        },
+        {
+          id: 'rent-2',
+          monthYear: '2026-09',
+          monthLabel: 'September 2026',
+          ownerName: 'Ramesh Kumar Sharma',
+          ownerPhone: '9876543210',
+          tenantName: 'Rahul Verma',
+          roomNo: 'Flat 202, Gokul Heights',
+          baseRent: 6500,
+          electricityAmount: 880,
+          electricityUnits: '110 Units',
+          otherCharges: 200,
+          totalAmount: 7580,
+          status: 'Paid',
+          paymentMode: 'UPI (PhonePe)',
+          txnId: 'UPI-7718293911',
+          date: '2026-09-04'
+        }
+      ],
+      dailyExpenses: [
+        { id: 'exp-1', title: 'Milk (1.5L) & Bread', amount: 98, date: '2026-10-25', category: 'Food', mode: 'UPI' },
+        { id: 'exp-2', title: 'Auto fare to market', amount: 40, date: '2026-10-25', category: 'Transport', mode: 'Cash' },
+        { id: 'exp-3', title: 'Evening Chai & Samosa', amount: 50, date: '2026-10-24', category: 'Food', mode: 'UPI' },
+        { id: 'exp-4', title: 'Fresh Vegetables (Aloo, Pyaaz, Tamatar)', amount: 160, date: '2026-10-24', category: 'Vegetables', mode: 'Cash' },
+      ],
+      rationItems: [
+        { id: 'rat-1', name: 'Aashirvaad Shudh Chakki Aata', quantity: '10 kg', category: 'Grains & Flours', price: 420, status: 'bought' },
+        { id: 'rat-2', name: 'India Gate Basmati Rice', quantity: '5 kg', category: 'Grains & Flours', price: 380, status: 'bought' },
+        { id: 'rat-3', name: 'Mustard Oil (Kacchi Ghani)', quantity: '2 Litre', category: 'Oil & Ghee', price: 290, status: 'pending' },
+        { id: 'rat-4', name: 'Toor / Arhar Dal', quantity: '2 kg', category: 'Pulses & Dal', price: 280, status: 'pending' },
+        { id: 'rat-5', name: 'Tata Salt & Haldi Powder', quantity: '1 Pkt each', category: 'Spices & Salt', price: 65, status: 'bought' },
+      ],
+      electricityLogs: [
+        { id: 'elec-1', prevReading: 1420, currReading: 1535, rate: 8, units: 115, fixed: 0, total: 920, date: '2026-10-01' },
+        { id: 'elec-2', prevReading: 1310, currReading: 1420, rate: 8, units: 110, fixed: 0, total: 880, date: '2026-09-01' }
+      ],
+      activeReceiptIndex: 0
+    };
+
+    // ==========================================
+    // INITIALIZATION & TAB SWITCHING
+    // ==========================================
+    window.onload = function () {
+      const today = new Date();
+      const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+      document.getElementById('currentDateDisplay').innerText = today.toLocaleDateString('en-IN', options);
+
+      const monthStr = today.toISOString().slice(0, 7);
+      document.getElementById('rentMonthYear').value = monthStr;
+      document.getElementById('expenseDate').value = today.toISOString().slice(0, 10);
+
+      calculateElectricityBill();
+      renderAll();
+    };
+
+    function switchTab(tabKey) {
+      state.activeTab = tabKey;
+      
+      const sections = ['rent', 'electricity', 'daily', 'ration'];
+      sections.forEach(sec => {
+        const el = document.getElementById(`section-${sec}`);
+        if (el) {
+          if (sec === tabKey) {
+            el.classList.remove('hidden');
+            el.classList.add('block');
+          } else {
+            el.classList.add('hidden');
+            el.classList.remove('block');
+          }
+        }
+
+        // Desktop nav tab styling
+        const dTab = document.getElementById(`tab-${sec}-desktop`);
+        if (dTab) {
+          if (sec === tabKey) {
+            dTab.classList.add('border-indigo-400', 'text-white');
+            dTab.classList.remove('border-transparent', 'text-slate-300');
+          } else {
+            dTab.classList.remove('border-indigo-400', 'text-white');
+            dTab.classList.add('border-transparent', 'text-slate-300');
+          }
+        }
+
+        // Mobile bottom nav keys styling
+        const mTab = document.getElementById(`tab-${sec}-mobile`);
+        if (mTab) {
+          if (sec === tabKey) {
+            mTab.classList.add('text-indigo-600', 'bg-indigo-50/80');
+            mTab.classList.remove('text-slate-400');
+          } else {
+            mTab.classList.remove('text-indigo-600', 'bg-indigo-50/80');
+            mTab.classList.add('text-slate-400');
+          }
+        }
+      });
+
+      updateSummaryWidgets();
+    }
+
+    function renderAll() {
+      renderRentRecords();
+      renderExpenses();
+      renderRationList();
+      renderElectricityHistory();
+      updateSummaryWidgets();
+    }
+
+    // ==========================================
+    // TOAST NOTIFICATION UTILITY
+    // ==========================================
+    function showToast(message, type = 'success') {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toastMsg');
+      const toastIcon = document.getElementById('toastIcon');
+
+      toastMsg.innerText = message;
+      if (type === 'success') {
+        toastIcon.className = 'fa-solid fa-circle-check text-emerald-400 text-sm';
+      } else if (type === 'info') {
+        toastIcon.className = 'fa-solid fa-circle-info text-blue-400 text-sm';
+      } else {
+        toastIcon.className = 'fa-solid fa-triangle-exclamation text-amber-400 text-sm';
+      }
+
+      toast.classList.remove('translate-y-[-100px]', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.add('translate-y-[-100px]', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 3000);
+    }
+
+    // ==========================================
+    // 1. RENT & RECEIPT LOGIC
+    // ==========================================
+    function openAddRentModal() {
+      const elecBill = calculateCurrentElectricityNumber();
+      document.getElementById('rentElecAmount').value = elecBill > 0 ? elecBill : '';
+      
+      if (state.rentRecords.length > 0) {
+        const last = state.rentRecords[0];
+        document.getElementById('rentOwnerName').value = last.ownerName || '';
+        document.getElementById('rentTenantName').value = last.tenantName || '';
+        document.getElementById('rentRoomNo').value = last.roomNo || '';
+        document.getElementById('rentBaseAmount').value = last.baseRent || 5000;
+        document.getElementById('rentOwnerPhone').value = last.ownerPhone || '';
+      }
+      
+      calculateRentModalTotal();
+      document.getElementById('rentModal').classList.remove('hidden');
+    }
+
+    function calculateRentModalTotal() {
+      const base = Number(document.getElementById('rentBaseAmount').value) || 0;
+      const elec = Number(document.getElementById('rentElecAmount').value) || 0;
+      const other = Number(document.getElementById('rentOtherAmount').value) || 0;
+      const grand = base + elec + other;
+      document.getElementById('modalRentGrandTotal').innerText = `₹${grand.toLocaleString('en-IN')}`;
+    }
+
+    function handleSaveRent(e) {
+      e.preventDefault();
+      const monthYearVal = document.getElementById('rentMonthYear').value;
+      const dateObj = new Date(monthYearVal + '-01');
+      const monthLabel = dateObj.toLocaleDateString('en-IN', { month: 'long', year: 'numeric' });
+
+      const base = Number(document.getElementById('rentBaseAmount').value) || 0;
+      const elec = Number(document.getElementById('rentElecAmount').value) || 0;
+      const other = Number(document.getElementById('rentOtherAmount').value) || 0;
+      const total = base + elec + other;
+
+      const newRecord = {
+        id: 'rent-' + Date.now(),
+        monthYear: monthYearVal,
+        monthLabel: monthLabel,
+        ownerName: document.getElementById('rentOwnerName').value.trim(),
+        ownerPhone: document.getElementById('rentOwnerPhone').value.trim() || '9876543210',
+        tenantName: document.getElementById('rentTenantName').value.trim(),
+        roomNo: document.getElementById('rentRoomNo').value.trim(),
+        baseRent: base,
+        electricityAmount: elec,
+        electricityUnits: elec > 0 ? `Included Electricity: ₹${elec}` : 'N/A',
+        otherCharges: other,
+        totalAmount: total,
+        status: document.getElementById('rentStatus').value,
+        paymentMode: document.getElementById('rentPaymentMode').value,
+        txnId: document.getElementById('rentTxnId').value.trim() || ('TXN-' + Math.floor(100000 + Math.random() * 900000)),
+        date: new Date().toISOString().slice(0, 10)
+      };
+
+      state.rentRecords.unshift(newRecord);
+      closeModal('rentModal');
+      renderRentRecords();
+      updateSummaryWidgets();
+      showToast(`Rent record for ${monthLabel} saved!`);
+    }
+
+    function renderRentRecords() {
+      const tbody = document.getElementById('rentRecordsTableBody');
+      tbody.innerHTML = '';
+
+      if (state.rentRecords.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="7" class="py-6 text-center text-slate-400">No rent records saved yet. Click "New Rent Record" to create one.</td></tr>`;
+        return;
+      }
+
+      const latest = state.rentRecords[0];
+      document.getElementById('highlightRentMonth').innerText = latest.monthLabel;
+      document.getElementById('highlightRentStatus').innerText = latest.status;
+      document.getElementById('highlightTotalAmount').innerText = `₹${latest.totalAmount.toLocaleString('en-IN')}`;
+      document.getElementById('highlightOwnerName').innerText = latest.ownerName;
+      document.getElementById('highlightBaseRent').innerText = `₹${latest.baseRent.toLocaleString('en-IN')}`;
+      document.getElementById('highlightElectricity').innerText = `₹${latest.electricityAmount.toLocaleString('en-IN')}`;
+
+      const statusBadge = document.getElementById('highlightRentStatus');
+      if (latest.status === 'Paid') {
+        statusBadge.className = 'text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-400/30';
+      } else {
+        statusBadge.className = 'text-xs font-semibold px-2.5 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-400/30';
+      }
+
+      state.rentRecords.forEach((record, idx) => {
+        const tr = document.createElement('tr');
+        tr.className = 'hover:bg-slate-50 transition-colors';
+        tr.innerHTML = `
+          <td class="py-3 px-4 font-semibold text-slate-900">${record.monthLabel}</td>
+          <td class="py-3 px-4">${record.ownerName}</td>
+          <td class="py-3 px-4">₹${record.baseRent.toLocaleString('en-IN')}</td>
+          <td class="py-3 px-4 text-amber-600 font-medium">₹${record.electricityAmount.toLocaleString('en-IN')}</td>
+          <td class="py-3 px-4 font-bold text-indigo-700">₹${record.totalAmount.toLocaleString('en-IN')}</td>
+          <td class="py-3 px-4">
+            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold ${
+              record.status === 'Paid' ? 'bg-emerald-100 text-emerald-700' : 'bg-amber-100 text-amber-700'
+            }">
+              ${record.status}
+            </span>
+          </td>
+          <td class="py-3 px-4 text-center">
+            <div class="inline-flex items-center gap-1.5">
+              <button onclick="viewReceiptByIndex(${idx})" title="View Receipt" class="p-1.5 bg-indigo-50 hover:bg-indigo-100 text-indigo-600 rounded-lg transition-all text-xs">
+                <i class="fa-solid fa-file-invoice"></i> Slip
+              </button>
+              <button onclick="shareWhatsAppByIndex(${idx})" title="Share to WhatsApp" class="p-1.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-600 rounded-lg transition-all text-xs">
+                <i class="fa-brands fa-whatsapp"></i> Send
+              </button>
+              <button onclick="deleteRentRecord('${record.id}')" title="Delete" class="p-1.5 hover:bg-rose-50 text-slate-400 hover:text-rose-600 rounded-lg transition-all text-xs">
+                <i class="fa-regular fa-trash-can"></i>
+              </button>
+            </div>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function deleteRentRecord(id) {
+      state.rentRecords = state.rentRecords.filter(r => r.id !== id);
+      renderRentRecords();
+      updateSummaryWidgets();
+      showToast('Rent record removed', 'info');
+    }
+
+    function viewActiveRentReceipt() {
+      if (state.rentRecords.length === 0) {
+        showToast('No rent record available to view receipt!', 'warning');
+        return;
+      }
+      viewReceiptByIndex(0);
+    }
+
+    function viewReceiptByIndex(idx) {
+      state.activeReceiptIndex = idx;
+      const record = state.rentRecords[idx];
+      if (!record) return;
+
+      document.getElementById('rcptNo').innerText = `HRR-${record.monthYear.replace('-', '')}-${idx + 1}`;
+      document.getElementById('rcptDate').innerText = `Date: ${record.date || 'Today'}`;
+      document.getElementById('rcptTenantName').innerText = record.tenantName;
+      document.getElementById('rcptRoomAddress').innerText = record.roomNo;
+      document.getElementById('rcptOwnerName').innerText = record.ownerName;
+      document.getElementById('rcptOwnerPhone').innerText = `Ph: ${record.ownerPhone || 'N/A'}`;
+      document.getElementById('rcptPeriod').innerText = record.monthLabel;
+
+      document.getElementById('rcptBaseRent').innerText = `₹${record.baseRent.toLocaleString('en-IN')}`;
+      document.getElementById('rcptElectricity').innerText = `₹${record.electricityAmount.toLocaleString('en-IN')}`;
+      document.getElementById('rcptElecDetail').innerText = record.electricityUnits || '';
+      document.getElementById('rcptOther').innerText = `₹${record.otherCharges.toLocaleString('en-IN')}`;
+      document.getElementById('rcptGrandTotal').innerText = `₹${record.totalAmount.toLocaleString('en-IN')}`;
+
+      document.getElementById('rcptPayMode').innerText = record.paymentMode;
+      document.getElementById('rcptTxnId').innerText = record.txnId || 'N/A';
+      document.getElementById('rcptStatusBadge').innerText = record.status.toUpperCase();
+      document.getElementById('rcptStatusBadge').className = record.status === 'Paid' ? 'font-bold text-emerald-600' : 'font-bold text-amber-600';
+
+      document.getElementById('receiptModal').classList.remove('hidden');
+    }
+
+    function printReceipt() {
+      window.print();
+    }
+
+    function generateReceiptTextMessage(record) {
+      return `🏠 *HOUSE RENT PAYMENT RECEIPT* 🏠
+--------------------------------
+📅 *Period/Month:* ${record.monthLabel}
+👤 *Tenant (किरायेदार):* ${record.tenantName}
+📍 *Room/Flat:* ${record.roomNo}
+👤 *Landlord (मालिक):* ${record.ownerName}
+--------------------------------
+💵 *PAYMENT BREAKDOWN:*
+• Base Room Rent: ₹${record.baseRent}
+• Electricity Bill: ₹${record.electricityAmount} (${record.electricityUnits || 'Units'})
+• Water/Maintenance: ₹${record.otherCharges}
+--------------------------------
+💰 *TOTAL AMOUNT PAID: ₹${record.totalAmount}*
+✅ *Status:* ${record.status}
+💳 *Payment Mode:* ${record.paymentMode}
+🔢 *Txn Ref:* ${record.txnId}
+🗓️ *Date:* ${record.date || new Date().toISOString().slice(0, 10)}
+--------------------------------
+_Generated via AVHII DATABASE APP 1.0_`;
+    }
+
+    function shareActiveReceiptWhatsApp() {
+      if (state.rentRecords.length === 0) {
+        showToast('Please add a rent record first!', 'warning');
+        return;
+      }
+      shareWhatsAppByIndex(0);
+    }
+
+    function shareWhatsAppByIndex(idx) {
+      const record = state.rentRecords[idx];
+      if (!record) return;
+      const text = generateReceiptTextMessage(record);
+      const encoded = encodeURIComponent(text);
+      const phone = record.ownerPhone ? record.ownerPhone.replace(/[^0-9]/g, '') : '';
+      
+      const url = phone ? `https://wa.me/91${phone}?text=${encoded}` : `https://wa.me/?text=${encoded}`;
+      window.open(url, '_blank');
+    }
+
+    function shareDirectWhatsAppFromModal() {
+      shareWhatsAppByIndex(state.activeReceiptIndex);
+    }
+
+    function copyReceiptText() {
+      const record = state.rentRecords[state.activeReceiptIndex];
+      if (!record) return;
+      const text = generateReceiptTextMessage(record);
+
+      const tempTextArea = document.createElement('textarea');
+      tempTextArea.value = text;
+      document.body.appendChild(tempTextArea);
+      tempTextArea.select();
+      try {
+        document.execCommand('copy');
+        showToast('Receipt slip copied to clipboard!');
+      } catch (err) {
+        showToast('Failed to copy', 'warning');
+      }
+      document.body.removeChild(tempTextArea);
+    }
+
+    // ==========================================
+    // 2. ELECTRICITY BILL LOGIC
+    // ==========================================
+    function calculateCurrentElectricityNumber() {
+      const prev = Number(document.getElementById('meterPrevReading').value) || 0;
+      const curr = Number(document.getElementById('meterCurrentReading').value) || 0;
+      const rate = Number(document.getElementById('meterRatePerUnit').value) || 0;
+      const fixed = Number(document.getElementById('meterFixedCharges').value) || 0;
+      const units = Math.max(0, curr - prev);
+      return (units * rate) + fixed;
+    }
+
+    function calculateElectricityBill() {
+      const prev = Number(document.getElementById('meterPrevReading').value) || 0;
+      const curr = Number(document.getElementById('meterCurrentReading').value) || 0;
+      const rate = Number(document.getElementById('meterRatePerUnit').value) || 0;
+      const fixed = Number(document.getElementById('meterFixedCharges').value) || 0;
+
+      const units = Math.max(0, curr - prev);
+      const total = (units * rate) + fixed;
+
+      document.getElementById('calcTotalUnits').innerText = units;
+      document.getElementById('calcTotalBill').innerText = `₹${total.toLocaleString('en-IN')}`;
+
+      document.getElementById('statPowerBill').innerText = `₹${total.toLocaleString('en-IN')}`;
+      document.getElementById('statPowerUnits').innerText = `${units} Units consumed`;
+    }
+
+    function saveElectricityReading() {
+      const prev = Number(document.getElementById('meterPrevReading').value) || 0;
+      const curr = Number(document.getElementById('meterCurrentReading').value) || 0;
+      const rate = Number(document.getElementById('meterRatePerUnit').value) || 0;
+      const fixed = Number(document.getElementById('meterFixedCharges').value) || 0;
+      const units = Math.max(0, curr - prev);
+      const total = (units * rate) + fixed;
+
+      const log = {
+        id: 'elec-' + Date.now(),
+        prevReading: prev,
+        currReading: curr,
+        rate: rate,
+        units: units,
+        fixed: fixed,
+        total: total,
+        date: new Date().toISOString().slice(0, 10)
+      };
+
+      state.electricityLogs.unshift(log);
+      renderElectricityHistory();
+      showToast(`Saved! ${units} units bill ₹${total}`);
+    }
+
+    function renderElectricityHistory() {
+      const container = document.getElementById('meterHistoryList');
+      container.innerHTML = '';
+
+      if (state.electricityLogs.length === 0) {
+        container.innerHTML = `<p class="text-xs text-slate-400 py-3 text-center">No meter readings saved yet.</p>`;
+        return;
+      }
+
+      state.electricityLogs.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'p-2.5 rounded-xl border border-slate-100 bg-slate-50 flex items-center justify-between text-xs';
+        div.innerHTML = `
+          <div>
+            <div class="font-semibold text-slate-800">${item.units} Units <span class="text-[11px] text-slate-400 font-normal">(${item.prevReading} → ${item.currReading})</span></div>
+            <span class="text-[10px] text-slate-500">${item.date} @ ₹${item.rate}/unit</span>
+          </div>
+          <div class="text-right">
+            <span class="font-bold text-amber-700">₹${item.total}</span>
+          </div>
+        `;
+        container.appendChild(div);
+      });
+    }
+
+    function applyElectricityToLatestRent() {
+      const total = calculateCurrentElectricityNumber();
+      const prev = Number(document.getElementById('meterPrevReading').value) || 0;
+      const curr = Number(document.getElementById('meterCurrentReading').value) || 0;
+      const rate = Number(document.getElementById('meterRatePerUnit').value) || 0;
+      const units = Math.max(0, curr - prev);
+
+      if (state.rentRecords.length === 0) {
+        showToast('No rent record found! Creating a record first...', 'warning');
+        switchTab('rent');
+        return;
+      }
+
+      const latest = state.rentRecords[0];
+      latest.electricityAmount = total;
+      latest.electricityUnits = `${units} Units (${prev} - ${curr} @ ₹${rate}/u)`;
+      latest.totalAmount = latest.baseRent + latest.electricityAmount + latest.otherCharges;
+
+      renderRentRecords();
+      updateSummaryWidgets();
+      showToast(`Electricity bill ₹${total} added to ${latest.monthLabel} rent!`);
+      switchTab('rent');
+    }
+
+    // ==========================================
+    // 3. DAILY EXPENSES LOGIC
+    // ==========================================
+    function openAddExpenseModal() {
+      document.getElementById('expenseTitle').value = '';
+      document.getElementById('expenseAmount').value = '';
+      document.getElementById('expenseDate').value = new Date().toISOString().slice(0, 10);
+      document.getElementById('expenseModal').classList.remove('hidden');
+    }
+
+    function quickAddExpense(title, amount, category) {
+      const newExp = {
+        id: 'exp-' + Date.now(),
+        title: title,
+        amount: amount,
+        date: new Date().toISOString().slice(0, 10),
+        category: category,
+        mode: 'UPI'
+      };
+      state.dailyExpenses.unshift(newExp);
+      renderExpenses();
+      updateSummaryWidgets();
+      showToast(`Added: ${title} - ₹${amount}`);
+    }
+
+    function handleSaveExpense(e) {
+      e.preventDefault();
+      const title = document.getElementById('expenseTitle').value.trim();
+      const amount = Number(document.getElementById('expenseAmount').value) || 0;
+      const date = document.getElementById('expenseDate').value;
+      const category = document.getElementById('expenseCategory').value;
+      const mode = document.getElementById('expenseMode').value;
+
+      const newExp = {
+        id: 'exp-' + Date.now(),
+        title: title,
+        amount: amount,
+        date: date,
+        category: category,
+        mode: mode
+      };
+
+      state.dailyExpenses.unshift(newExp);
+      closeModal('expenseModal');
+      renderExpenses();
+      updateSummaryWidgets();
+      showToast(`Expense of ₹${amount} logged!`);
+    }
+
+    function renderExpenses() {
+      const tbody = document.getElementById('dailyExpensesTableBody');
+      const filterCat = document.getElementById('expenseFilterCategory').value;
+      tbody.innerHTML = '';
+
+      let filtered = state.dailyExpenses;
+      if (filterCat !== 'All') {
+        filtered = filtered.filter(exp => exp.category === filterCat);
+      }
+
+      const totalFiltered = filtered.reduce((sum, item) => sum + item.amount, 0);
+      document.getElementById('filteredExpenseTotal').innerText = `₹${totalFiltered.toLocaleString('en-IN')}`;
+
+      if (filtered.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="6" class="py-6 text-center text-slate-400">No expenses recorded for this filter.</td></tr>`;
+        return;
+      }
+
+      filtered.forEach(item => {
+        const tr = document.createElement('tr');
+        tr.className = 'hover:bg-slate-50 transition-colors';
+        tr.innerHTML = `
+          <td class="py-3 px-4 text-slate-500 font-medium">${item.date}</td>
+          <td class="py-3 px-4 font-semibold text-slate-800">${item.title}</td>
+          <td class="py-3 px-4">
+            <span class="inline-block text-[11px] font-medium px-2 py-0.5 rounded-md bg-slate-100 text-slate-700">
+              ${item.category}
+            </span>
+          </td>
+          <td class="py-3 px-4 text-slate-600">${item.mode}</td>
+          <td class="py-3 px-4 text-right font-bold text-emerald-600">₹${item.amount.toLocaleString('en-IN')}</td>
+          <td class="py-3 px-4 text-center">
+            <button onclick="deleteExpense('${item.id}')" title="Delete" class="p-1 hover:bg-rose-50 text-slate-400 hover:text-rose-600 rounded transition-all">
+              <i class="fa-regular fa-trash-can"></i>
+            </button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function deleteExpense(id) {
+      state.dailyExpenses = state.dailyExpenses.filter(e => e.id !== id);
+      renderExpenses();
+      updateSummaryWidgets();
+      showToast('Expense item removed', 'info');
+    }
+
+    // ==========================================
+    // 4. RATION LOGIC
+    // ==========================================
+    function openAddRationModal() {
+      document.getElementById('rationName').value = '';
+      document.getElementById('rationQuantity').value = '';
+      document.getElementById('rationPrice').value = '';
+      document.getElementById('rationModal').classList.remove('hidden');
+    }
+
+    function handleSaveRation(e) {
+      e.preventDefault();
+      const name = document.getElementById('rationName').value.trim();
+      const qty = document.getElementById('rationQuantity').value.trim();
+      const price = Number(document.getElementById('rationPrice').value) || 0;
+      const category = document.getElementById('rationCategory').value;
+      const status = document.getElementById('rationStatus').value;
+
+      const newItem = {
+        id: 'rat-' + Date.now(),
+        name: name,
+        quantity: qty,
+        category: category,
+        price: price,
+        status: status
+      };
+
+      state.rationItems.push(newItem);
+      closeModal('rationModal');
+      renderRationList();
+      updateSummaryWidgets();
+      showToast(`${name} added to ration list!`);
+    }
+
+    function addCommonRationPresets() {
+      const presets = [
+        { name: 'Fortune Soyabean Oil', quantity: '1 Litre', category: 'Oil & Ghee', price: 140, status: 'pending' },
+        { name: 'Moong Dal (Yellow)', quantity: '1 kg', category: 'Pulses & Dal', price: 130, status: 'pending' },
+        { name: 'Chana / Besan', quantity: '1 kg', category: 'Grains & Flours', price: 90, status: 'pending' },
+        { name: 'Sugar / Cheeni', quantity: '2 kg', category: 'Spices & Salt', price: 95, status: 'bought' },
+        { name: 'Detergent & Bath Soaps', quantity: '1 Pack', category: 'Cleaning & Soap', price: 180, status: 'pending' }
+      ];
+
+      presets.forEach(p => {
+        state.rationItems.push({
+          id: 'rat-' + Math.random().toString(36).substring(2, 9),
+          ...p
+        });
+      });
+
+      renderRationList();
+      updateSummaryWidgets();
+      showToast('Standard ration items added!');
+    }
+
+    function toggleRationStatus(id) {
+      const item = state.rationItems.find(r => r.id === id);
+      if (item) {
+        item.status = item.status === 'bought' ? 'pending' : 'bought';
+        renderRationList();
+        updateSummaryWidgets();
+        showToast(`Status updated: ${item.name}`);
+      }
+    }
+
+    function deleteRationItem(id) {
+      state.rationItems = state.rationItems.filter(r => r.id !== id);
+      renderRationList();
+      updateSummaryWidgets();
+      showToast('Ration item removed', 'info');
+    }
+
+    function renderRationList() {
+      const tbody = document.getElementById('rationTableBody');
+      tbody.innerHTML = '';
+
+      let estTotal = 0;
+      let boughtTotal = 0;
+      let pendingTotal = 0;
+      let pendingCount = 0;
+
+      state.rationItems.forEach(item => {
+        estTotal += item.price;
+        if (item.status === 'bought') {
+          boughtTotal += item.price;
+        } else {
+          pendingTotal += item.price;
+          pendingCount++;
+        }
+
+        const isBought = item.status === 'bought';
+        const tr = document.createElement('tr');
+        tr.className = 'hover:bg-slate-50 transition-colors';
+        tr.innerHTML = `
+          <td class="py-3 px-4">
+            <button onclick="toggleRationStatus('${item.id}')" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold cursor-pointer transition-all ${
+              isBought ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800 hover:bg-amber-200'
+            }">
+              <i class="fa-solid ${isBought ? 'fa-check' : 'fa-hourglass-half'}"></i>
+              ${isBought ? 'Bought' : 'To Buy'}
+            </button>
+          </td>
+          <td class="py-3 px-4 font-semibold text-slate-800 ${isBought ? 'line-through text-slate-400' : ''}">
+            ${item.name}
+          </td>
+          <td class="py-3 px-4 font-medium text-slate-600">${item.quantity}</td>
+          <td class="py-3 px-4 text-slate-500 text-xs">${item.category}</td>
+          <td class="py-3 px-4 text-right font-bold text-slate-800">₹${item.price.toLocaleString('en-IN')}</td>
+          <td class="py-3 px-4 text-center">
+            <button onclick="deleteRationItem('${item.id}')" title="Delete" class="p-1 hover:bg-rose-50 text-slate-400 hover:text-rose-600 rounded transition-all">
+              <i class="fa-regular fa-trash-can"></i>
+            </button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      document.getElementById('rationEstTotal').innerText = `₹${estTotal.toLocaleString('en-IN')}`;
+      document.getElementById('rationBoughtTotal').innerText = `₹${boughtTotal.toLocaleString('en-IN')}`;
+      document.getElementById('rationPendingTotal').innerText = `₹${pendingTotal.toLocaleString('en-IN')}`;
+      
+      document.getElementById('statRationCost').innerText = `₹${estTotal.toLocaleString('en-IN')}`;
+      document.getElementById('statRationCount').innerText = `${pendingCount} items pending`;
+    }
+
+    // ==========================================
+    // TOP WIDGETS SUMMARY CALCULATOR
+    // ==========================================
+    function updateSummaryWidgets() {
+      if (state.rentRecords.length > 0) {
+        const latest = state.rentRecords[0];
+        document.getElementById('statRentAmount').innerText = `₹${latest.totalAmount.toLocaleString('en-IN')}`;
+        const badge = document.getElementById('statRentBadge');
+        badge.innerText = latest.status;
+        badge.className = latest.status === 'Paid'
+          ? 'inline-block text-[11px] font-semibold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full mt-1'
+          : 'inline-block text-[11px] font-semibold text-amber-700 bg-amber-100 px-2 py-0.5 rounded-full mt-1';
+      }
+
+      const todayStr = new Date().toISOString().slice(0, 10);
+      const todayTotal = state.dailyExpenses
+        .filter(e => e.date === todayStr)
+        .reduce((sum, e) => sum + e.amount, 0);
+      const totalMonthExp = state.dailyExpenses.reduce((sum, e) => sum + e.amount, 0);
+
+      document.getElementById('statTodayExpense').innerText = `₹${todayTotal.toLocaleString('en-IN')}`;
+      document.getElementById('statMonthExpense').innerText = `All: ₹${totalMonthExp.toLocaleString('en-IN')}`;
+    }
+
+    // ==========================================
+    // MODAL & DOWNLOAD UTILITIES
+    // ==========================================
+    function closeModal(modalId) {
+      document.getElementById(modalId).classList.add('hidden');
+    }
+
+    function openDownloadModal() {
+      document.getElementById('downloadModal').classList.remove('hidden');
+    }
+
+    // Multi-fallback HTML file downloader
+    function downloadSelfApp() {
+      try {
+        const pageContent = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+        const blob = new Blob([pageContent], { type: 'text/html;charset=utf-8' });
+        
+        // Method 1: Blob URL
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'AVHII_DATABASE_APP_1.0.html';
+        document.body.appendChild(a);
+        a.click();
+        setTimeout(() => {
+          document.body.removeChild(a);
+          URL.revokeObjectURL(url);
+        }, 1500);
+        showToast('App download ho raha hai! Check your downloads.');
+      } catch (e1) {
+        // Method 2: Data URI fallback
+        try {
+          const pageContent = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+          const a = document.createElement('a');
+          a.href = 'data:text/html;charset=utf-8,' + encodeURIComponent(pageContent);
+          a.download = 'AVHII_DATABASE_APP_1.0.html';
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          showToast('App downloaded successfully!');
+        } catch (e2) {
+          copyCompleteAppCode();
+        }
+      }
+    }
+
+    function copyCompleteAppCode() {
+      const pageContent = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+      const tempTextArea = document.createElement('textarea');
+      tempTextArea.value = pageContent;
+      document.body.appendChild(tempTextArea);
+      tempTextArea.select();
+      try {
+        document.execCommand('copy');
+        showToast('Pura App Code copy ho gaya! Kisi file me paste karein.', 'success');
+      } catch (err) {
+        showToast('Copy nahi ho paya, please browser permissions check karein.', 'warning');
+      }
+      document.body.removeChild(tempTextArea);
+    }
+
+    function exportDataJSON() {
+      try {
+        const exportObj = {
+          app: 'AVHII DATABASE APP 1.0',
+          exportedAt: new Date().toISOString(),
+          rentRecords: state.rentRecords,
+          dailyExpenses: state.dailyExpenses,
+          rationItems: state.rationItems,
+          electricityLogs: state.electricityLogs
+        };
+        const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportObj, null, 2));
+        const dlAnchor = document.createElement('a');
+        dlAnchor.setAttribute("href", dataStr);
+        dlAnchor.setAttribute("download", `AVHII_DATABASE_BACKUP_${new Date().toISOString().slice(0, 10)}.json`);
+        document.body.appendChild(dlAnchor);
+        dlAnchor.click();
+        dlAnchor.remove();
+        showToast('Database backup downloaded!');
+      } catch (err) {
+        showToast('Export failed', 'warning');
+      }
+    }
+
+    function importDataJSON(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        try {
+          const parsed = JSON.parse(e.target.result);
+          if (parsed.rentRecords) state.rentRecords = parsed.rentRecords;
+          if (parsed.dailyExpenses) state.dailyExpenses = parsed.dailyExpenses;
+          if (parsed.rationItems) state.rationItems = parsed.rationItems;
+          if (parsed.electricityLogs) state.electricityLogs = parsed.electricityLogs;
+          renderAll();
+          closeModal('downloadModal');
+          showToast('Database restored successfully from backup!');
+        } catch (err) {
+          showToast('Invalid backup JSON file', 'warning');
+        }
+      };
+      reader.readAsText(file);
+    }
+  </script>
+
+</body></html>
